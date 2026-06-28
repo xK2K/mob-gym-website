@@ -1,0 +1,13 @@
+{
+  "name": "THE MOB GYM",
+  "short_name": "THE MOB",
+  "description": "MMA & Combat Sports — Umm Salal Ali, Qatar",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0f",
+  "theme_color": "#552583",
+  "icons": [
+    { "src": "images/favicon-180.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "images/favicon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
