@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product — THE MOB STORE</title>
+  <link rel="icon" href="images/logo-mark-gold.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/shop.css" />
+</head>
+<body>
+
+<!-- ── Navigation ── -->
+<nav class="nav store-nav">
+  <div class="nav__inner">
+    <a class="nav__logo" href="index.html">
+      <img src="images/logo-mark-gold.png" alt="THE MOB" class="nav__mark" />
+      <span class="nav__wordmark">THE MOB</span>
+    </a>
+    <div class="nav__links">
+      <a href="index.html" class="nav__link" data-en="Home" data-ar="الرئيسية">Home</a>
+      <a href="shop.html" class="nav__link" data-en="Store" data-ar="المتجر">Store</a>
+    </div>
+    <div class="nav__actions">
+      <button class="nav__lang" id="langToggle" aria-label="Toggle language">AR</button>
+      <button class="cart-trigger" id="cartOpen" aria-label="Open cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        <span data-en="Cart" data-ar="السلة">Cart</span>
+        <span class="cart-badge" id="cartBadge"></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ── Back link ── -->
+<a href="shop.html" class="pd-back" id="pdBack">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16"><polyline points="15 18 9 12 15 6"/></svg>
+  <span data-en="Back to Store" data-ar="العودة للمتجر">Back to Store</span>
+</a>
+
+<!-- ── Product layout ── -->
+<div class="pd-layout" id="pdLayout">
+  <!-- Populated by JS -->
+</div>
+
+<!-- ── Cart sidebar ── -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-panel" id="cartPanel" aria-label="Shopping cart">
+  <div class="cart-panel__head">
+    <h2 class="cart-panel__title" data-en="Your Cart" data-ar="سلتك">Your Cart</h2>
+    <button class="cart-close" id="cartClose" aria-label="Close cart">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-panel__foot" id="cartFoot" hidden>
+    <div class="cart-total">
+      <span class="cart-total__label" data-en="Total" data-ar="المجموع">Total</span>
+      <span class="cart-total__value" id="cartTotal">0 QAR</span>
+    </div>
+    <button class="cart-checkout-wa" id="cartWA">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      <span data-en="Order via WhatsApp" data-ar="اطلب عبر واتساب">Order via WhatsApp</span>
+    </button>
+    <p class="cart-pay-divider" data-en="— or pay online —" data-ar="— أو ادفع أونلاين —">— or pay online —</p>
+    <div class="cart-pay-methods">
+      <button class="pay-method-btn pay-method-btn--apple" id="payApple">
+        <svg viewBox="0 0 24 24" fill="currentColor" height="18"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        <span>Apple Pay</span>
+      </button>
+      <button class="pay-method-btn" id="payShops">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" height="18"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+        <span data-en="Card / Shops" data-ar="بطاقة / شوبس">Card / Shops</span>
+      </button>
+    </div>
+    <p class="pay-coming" data-en="Secure checkout powered by Shopify Payments &amp; Shops" data-ar="دفع آمن عبر Shopify Payments و Shops">Secure checkout powered by Shopify Payments &amp; Shops</p>
+  </div>
+</aside>
+
+<!-- ── Toast ── -->
+<div id="addToastEl" style="
+  position:fixed; bottom:2rem; left:50%; transform:translateX(-50%) translateY(120%);
+  background:linear-gradient(135deg,rgba(253,185,39,.15),rgba(30,20,50,.95));
+  border:1px solid rgba(253,185,39,.4); border-radius:50px; padding:.7rem 1.4rem;
+  color:#fff; font-weight:700; font-size:.88rem; z-index:2000; white-space:nowrap;
+  transition:transform .4s cubic-bezier(.22,1,.36,1); pointer-events:none;
+  backdrop-filter:blur(12px);
+" aria-live="polite"></div>
+
+<script src="js/store.js"></script>
+<script>
+(function () {
+  var lang = localStorage.getItem('mob_lang') || 'en';
+  var selectedSize = null;
+  var productId = new URLSearchParams(location.search).get('id');
+  var product = PRODUCTS.find(function (p) { return p.id === productId; });
+
+  /* ── Redirect if no product ── */
+  if (!product) { location.href = 'shop.html'; return; }
+
+  /* ── Language ── */
+  function applyLang(l) {
+    lang = l;
+    document.documentElement.lang = l;
+    document.documentElement.dir = l === 'ar' ? 'rtl' : 'ltr';
+    localStorage.setItem('mob_lang', l);
+    document.getElementById('langToggle').textContent = l === 'ar' ? 'EN' : 'AR';
+    document.querySelectorAll('[data-en]').forEach(function (el) {
+      var key = l === 'ar' ? 'ar' : 'en';
+      if (el.dataset[key]) el.innerHTML = el.dataset[key];
+    });
+    renderProduct();
+    renderCart();
+  }
+  document.getElementById('langToggle').addEventListener('click', function () { applyLang(lang === 'ar' ? 'en' : 'ar'); });
+
+  /* ── Render product ── */
+  function renderProduct() {
+    var name = lang === 'ar' ? product.nameAr : product.nameEn;
+    var desc = lang === 'ar' ? product.descAr : product.descEn;
+    var badge = lang === 'ar' ? product.badgeAr : product.badge;
+    document.title = name + ' — THE MOB STORE';
+
+    var specsHtml = product.specs.map(function (s) {
+      return '<div class="pd-spec">' +
+        '<div class="pd-spec__key">' + (lang === 'ar' ? s.ar : s.en) + '</div>' +
+        '<div class="pd-spec__val">' + s.val + '</div>' +
+      '</div>';
+    }).join('');
+
+    var sizesHtml = product.sizes.map(function (s) {
+      return '<button class="size-btn' + (selectedSize === s ? ' is-selected' : '') + '" data-size="' + s + '">' + s + '</button>';
+    }).join('');
+
+    var addLabel = lang === 'ar' ? (selectedSize ? 'أضف إلى السلة' : 'اختر مقاساً أولاً') : (selectedSize ? 'Add to Cart' : 'Select a Size First');
+
+    document.getElementById('pdLayout').innerHTML =
+      '<div class="pd-gallery">' +
+        '<div class="pd-main-img">' +
+          '<img src="' + product.image + '" alt="' + name + '" onerror="this.style.opacity=0" />' +
+        '</div>' +
+      '</div>' +
+      '<div class="pd-info">' +
+        (badge ? '<span class="pd-kicker">' + badge + '</span>' : '<span class="pd-kicker" data-en="Official Gear" data-ar="معدات رسمية">' + (lang === 'ar' ? 'معدات رسمية' : 'Official Gear') + '</span>') +
+        '<h1 class="pd-name">' + name + '</h1>' +
+        '<div class="pd-price">' + product.price + ' <small>' + product.currency + '</small></div>' +
+        '<p class="pd-desc">' + desc + '</p>' +
+        '<hr class="pd-divider" />' +
+        '<div>' +
+          '<p class="pd-label">' + (lang === 'ar' ? 'المقاس' : 'Select Size') + '</p>' +
+          '<div class="size-grid" id="sizeGrid">' + sizesHtml + '</div>' +
+        '</div>' +
+        '<div class="pd-actions">' +
+          '<button class="pd-add-cart" id="pdAddCart"' + (selectedSize ? '' : ' disabled') + '>' +
+            '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="18"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>' +
+            addLabel +
+          '</button>' +
+          '<button class="pd-wa" id="pdWA">' +
+            '<svg viewBox="0 0 24 24" fill="currentColor" width="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>' +
+            (lang === 'ar' ? 'اطلب عبر واتساب' : 'Order via WhatsApp') +
+          '</button>' +
+          '<div class="pd-pay-row">' +
+            '<button class="pd-pay-btn pd-pay-btn--apple" id="pdApple">' +
+              '<svg viewBox="0 0 24 24" fill="currentColor" height="16"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>' +
+              'Apple Pay' +
+            '</button>' +
+            '<button class="pd-pay-btn" id="pdShops">' +
+              '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" height="14"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>' +
+              (lang === 'ar' ? 'بطاقة / شوبس' : 'Card / Shops') +
+            '</button>' +
+            '<button class="pd-pay-btn" id="pdVisa">' +
+              '<svg viewBox="0 0 48 16" fill="none" height="14"><text x="0" y="13" font-size="14" font-weight="900" fill="white" font-family="Arial">VISA</text></svg>' +
+            '</button>' +
+          '</div>' +
+          '<p class="pd-pay-note" data-en="Secure checkout · Free shipping in Qatar" data-ar="دفع آمن · شحن مجاني داخل قطر">' + (lang === 'ar' ? 'دفع آمن · شحن مجاني داخل قطر' : 'Secure checkout · Free shipping in Qatar') + '</p>' +
+        '</div>' +
+        '<hr class="pd-divider" />' +
+        '<div>' +
+          '<p class="pd-label">' + (lang === 'ar' ? 'المواصفات' : 'Specifications') + '</p>' +
+          '<div class="pd-specs">' + specsHtml + '</div>' +
+        '</div>' +
+      '</div>';
+
+    /* size selection */
+    document.getElementById('sizeGrid').querySelectorAll('.size-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        selectedSize = btn.dataset.size;
+        renderProduct();
+      });
+    });
+
+    /* add to cart */
+    var addBtn = document.getElementById('pdAddCart');
+    if (addBtn && !addBtn.disabled) {
+      addBtn.addEventListener('click', function () {
+        Cart.add(productId, selectedSize);
+        showToast(lang === 'ar' ? 'تمت الإضافة ✓' : 'Added to cart ✓');
+        renderCart();
+      });
+    }
+
+    /* WA direct order */
+    document.getElementById('pdWA').addEventListener('click', function () {
+      var name2 = lang === 'ar' ? product.nameAr : product.nameEn;
+      var sizeStr = selectedSize ? ' | ' + selectedSize : '';
+      var msg = lang === 'ar'
+        ? 'السلام عليكم، أريد الاستفسار عن: ' + name2 + sizeStr
+        : 'Hi, I want to order: ' + name2 + sizeStr + ' — ' + product.price + ' QAR';
+      window.open('https://wa.me/' + MOB_WA + '?text=' + encodeURIComponent(msg), '_blank');
+    });
+
+    /* Payment stubs */
+    function payStub(m) {
+      document.getElementById(m).addEventListener('click', function () {
+        alert(lang === 'ar' ? 'قريباً — الدفع الإلكتروني قادم!' : 'Coming soon — online payments activating soon!');
+      });
+    }
+    payStub('pdApple'); payStub('pdShops'); payStub('pdVisa');
+  }
+
+  /* ── Toast ── */
+  function showToast(msg) {
+    var el = document.getElementById('addToastEl');
+    el.textContent = msg;
+    el.style.transform = 'translateX(-50%) translateY(0)';
+    setTimeout(function () { el.style.transform = 'translateX(-50%) translateY(120%)'; }, 2200);
+  }
+
+  /* ── Cart panel ── */
+  function renderCart() {
+    var items = Cart.load();
+    var itemsEl = document.getElementById('cartItems');
+    var footEl = document.getElementById('cartFoot');
+    var totalEl = document.getElementById('cartTotal');
+    itemsEl.innerHTML = '';
+    if (!items.length) {
+      itemsEl.innerHTML = '<div class="cart-empty"><p>' + (lang === 'ar' ? 'سلتك فاضية' : 'Your cart is empty') + '</p></div>';
+      footEl.hidden = true;
+      return;
+    }
+    footEl.hidden = false;
+    totalEl.textContent = Cart.total() + ' QAR';
+    items.forEach(function (item) {
+      var iname = lang === 'ar' ? item.nameAr : item.nameEn;
+      var row = document.createElement('div');
+      row.className = 'cart-item';
+      row.innerHTML =
+        '<img class="cart-item__img" src="' + item.image + '" alt="' + iname + '" onerror="this.style.opacity=0" />' +
+        '<div><div class="cart-item__name">' + iname + '</div><div class="cart-item__size">' + item.size + '</div><div class="cart-item__price">' + (item.price * item.qty) + ' QAR</div></div>' +
+        '<div class="cart-item__controls">' +
+          '<div class="qty-ctrl">' +
+            '<button class="qty-btn" data-action="dec" data-id="' + item.id + '" data-size="' + item.size + '">−</button>' +
+            '<span class="qty-val">' + item.qty + '</span>' +
+            '<button class="qty-btn" data-action="inc" data-id="' + item.id + '" data-size="' + item.size + '">+</button>' +
+          '</div>' +
+          '<button class="cart-item__del" data-id="' + item.id + '" data-size="' + item.size + '">' + (lang === 'ar' ? 'حذف' : 'Remove') + '</button>' +
+        '</div>';
+      itemsEl.appendChild(row);
+    });
+    itemsEl.querySelectorAll('.qty-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        Cart.changeQty(btn.dataset.id, btn.dataset.size, btn.dataset.action === 'inc' ? 1 : -1);
+        renderCart();
+      });
+    });
+    itemsEl.querySelectorAll('.cart-item__del').forEach(function (btn) {
+      btn.addEventListener('click', function () { Cart.remove(btn.dataset.id, btn.dataset.size); renderCart(); });
+    });
+  }
+
+  function openCart() {
+    document.getElementById('cartPanel').classList.add('is-open');
+    document.getElementById('cartOverlay').classList.add('is-open');
+    renderCart();
+  }
+  function closeCart() {
+    document.getElementById('cartPanel').classList.remove('is-open');
+    document.getElementById('cartOverlay').classList.remove('is-open');
+  }
+  document.getElementById('cartOpen').addEventListener('click', openCart);
+  document.getElementById('cartClose').addEventListener('click', closeCart);
+  document.getElementById('cartOverlay').addEventListener('click', closeCart);
+
+  document.getElementById('cartWA').addEventListener('click', function () {
+    var msg = Cart.buildWAMessage(lang);
+    if (!msg) return;
+    window.open('https://wa.me/' + MOB_WA + '?text=' + msg, '_blank');
+  });
+
+  function payNotReady(id, method) {
+    document.getElementById(id).addEventListener('click', function () {
+      alert(lang === 'ar' ? method + ' — قريباً!' : method + ' — Coming soon!');
+    });
+  }
+  payNotReady('payApple', 'Apple Pay');
+  payNotReady('payShops', 'Shopify / Card');
+
+  /* ── Init ── */
+  applyLang(lang);
+})();
+</script>
+</body>
+</html>
