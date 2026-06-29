@@ -81,6 +81,14 @@
 </aside>
 
 <!-- ── Toast ── -->
+<!-- Product image zoom lightbox -->
+<div class="pd-zoom" id="pdZoom">
+  <button class="pd-zoom__close" id="pdZoomClose">✕</button>
+  <button class="pd-zoom__prev" id="pdZoomPrev">‹</button>
+  <img id="pdZoomImg" src="" alt="" />
+  <button class="pd-zoom__next" id="pdZoomNext">›</button>
+</div>
+
 <div id="addToastEl" style="
   position:fixed; bottom:2rem; left:50%; transform:translateX(-50%) translateY(120%);
   background:linear-gradient(135deg,rgba(253,185,39,.15),rgba(30,20,50,.95));
@@ -137,11 +145,22 @@
 
     var addLabel = lang === 'ar' ? (selectedSize ? 'أضف إلى السلة' : 'اختر مقاساً أولاً') : (selectedSize ? 'Add to Cart' : 'Select a Size First');
 
+    var allImages = product.images && product.images.length > 1 ? product.images : [product.image];
+    var activeImg = allImages[0];
+
+    var thumbsHtml = allImages.length > 1 ? '<div class="pd-thumbs">' +
+      allImages.map(function(src, i) {
+        return '<div class="pd-thumb' + (i === 0 ? ' is-active' : '') + '" data-src="' + src + '">' +
+          '<img src="' + src + '" alt="" onerror="this.style.opacity=0" />' +
+        '</div>';
+      }).join('') + '</div>' : '';
+
     document.getElementById('pdLayout').innerHTML =
       '<div class="pd-gallery">' +
-        '<div class="pd-main-img">' +
-          '<img src="' + product.image + '" alt="' + name + '" onerror="this.style.opacity=0" />' +
+        '<div class="pd-main-img" id="pdMainImgWrap">' +
+          '<img id="pdMainImg" src="' + activeImg + '" alt="' + name + '" onerror="this.style.opacity=0" />' +
         '</div>' +
+        thumbsHtml +
       '</div>' +
       '<div class="pd-info">' +
         (badge ? '<span class="pd-kicker">' + badge + '</span>' : '<span class="pd-kicker" data-en="Official Gear" data-ar="معدات رسمية">' + (lang === 'ar' ? 'معدات رسمية' : 'Official Gear') + '</span>') +
@@ -219,7 +238,68 @@
       });
     }
     payStub('pdApple'); payStub('pdShops'); payStub('pdVisa');
+
+    /* ── Thumbnails ── */
+    document.querySelectorAll('.pd-thumb').forEach(function(thumb) {
+      thumb.addEventListener('click', function() {
+        document.querySelectorAll('.pd-thumb').forEach(function(t) { t.classList.remove('is-active'); });
+        thumb.classList.add('is-active');
+        var mainImg = document.getElementById('pdMainImg');
+        if (mainImg) mainImg.src = thumb.dataset.src;
+      });
+    });
+
+    /* ── Zoom on main image click ── */
+    var mainWrap = document.getElementById('pdMainImgWrap');
+    if (mainWrap) {
+      mainWrap.addEventListener('click', function() {
+        var src = document.getElementById('pdMainImg').src;
+        openZoom(src);
+      });
+    }
   }
+
+  /* ── Image Zoom Lightbox ── */
+  var zoomImages = [];
+  var zoomIndex = 0;
+
+  function openZoom(src) {
+    var allImages = product.images && product.images.length > 1 ? product.images : [product.image];
+    zoomImages = allImages;
+    zoomIndex = allImages.indexOf(src.replace(window.location.origin + '/', ''));
+    if (zoomIndex < 0) zoomIndex = 0;
+    document.getElementById('pdZoomImg').src = allImages[zoomIndex];
+    document.getElementById('pdZoom').classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+    var nav = document.querySelector('.pd-zoom__prev');
+    var navN = document.querySelector('.pd-zoom__next');
+    if (allImages.length <= 1) { nav.style.display = 'none'; navN.style.display = 'none'; }
+    else { nav.style.display = ''; navN.style.display = ''; }
+  }
+
+  function closeZoom() {
+    document.getElementById('pdZoom').classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+
+  document.getElementById('pdZoomClose').addEventListener('click', closeZoom);
+  document.getElementById('pdZoom').addEventListener('click', function(e) { if (e.target === this) closeZoom(); });
+  document.getElementById('pdZoomPrev').addEventListener('click', function(e) {
+    e.stopPropagation();
+    zoomIndex = (zoomIndex - 1 + zoomImages.length) % zoomImages.length;
+    document.getElementById('pdZoomImg').src = zoomImages[zoomIndex];
+  });
+  document.getElementById('pdZoomNext').addEventListener('click', function(e) {
+    e.stopPropagation();
+    zoomIndex = (zoomIndex + 1) % zoomImages.length;
+    document.getElementById('pdZoomImg').src = zoomImages[zoomIndex];
+  });
+  document.addEventListener('keydown', function(e) {
+    if (!document.getElementById('pdZoom').classList.contains('is-open')) return;
+    if (e.key === 'Escape') closeZoom();
+    if (e.key === 'ArrowLeft') document.getElementById('pdZoomPrev').click();
+    if (e.key === 'ArrowRight') document.getElementById('pdZoomNext').click();
+  });
 
   /* ── Toast ── */
   function showToast(msg) {

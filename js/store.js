@@ -60,6 +60,25 @@ var PRODUCTS = [
     ]
   },
   {
+    id: 'shinguard',
+    nameEn: 'MOB Shin Guards',
+    nameAr: 'واقيات ساق MOB',
+    price: 100,
+    currency: 'QAR',
+    image: 'images/shop/shinguard-1.jpg',
+    images: ['images/shop/shinguard-1.jpg', 'images/shop/shinguard-2.jpg'],
+    badge: 'New',
+    badgeAr: 'جديد',
+    sizes: ['S', 'M', 'L', 'XL'],
+    descEn: 'Premium MOB shin guards engineered for Muay Thai and kickboxing. High-density foam core with full-grain leather shell absorbs heavy kicks while keeping you mobile. Secure velcro straps lock the guard in place — no slipping mid-round.',
+    descAr: 'واقيات ساق MOB الفاخرة — مصممة للمواي تاي والكيك بوكسينغ. قلب إسفنج كثيف بغلاف جلدي يمتص أقوى الركلات مع الحفاظ على حركتك. حزام فيلكرو محكم يثبت الواقي في مكانه طوال الجولة.',
+    specs: [
+      { en: 'Material', ar: 'الخامة', val: 'Full-Grain Leather' },
+      { en: 'Core', ar: 'الحشو', val: 'High-Density Foam' },
+      { en: 'Use', ar: 'الاستخدام', val: 'Muay Thai / Kickboxing' }
+    ]
+  },
+  {
     id: 'bag',
     nameEn: 'MOB Gear Bag',
     nameAr: 'حقيبة معدات MOB',
