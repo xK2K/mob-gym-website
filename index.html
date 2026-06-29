@@ -94,8 +94,8 @@
       <div class="hero__cage" aria-hidden="true"></div>
 
       <div class="hero__content">
-        <p class="hero__eyebrow reveal" data-en="Umm Salal Ali · Qatar" data-ar="أم صلال علي · قطر">Umm Salal Ali · Qatar</p>
-        <p class="hero__eyebrow hero__eyebrow--branch reveal" data-en="Mirqab Mall · Qatar" data-ar="مجمع مرقاب · قطر">Mirqab Mall · Qatar</p>
+        <a class="hero__eyebrow reveal" href="https://www.google.com/maps/place/The+Mob+MMA+GYM/@25.473776,51.3893833,17z/data=!3m1!4b1!4m6!3m5!1s0x3e45e3814b642643:0x59ee4d5ef29e9427!8m2!3d25.473776!4d51.3893833!16s%2Fg%2F11trq_2cdt" target="_blank" rel="noopener" data-en="Umm Salal Ali · Qatar" data-ar="أم صلال علي · قطر">Umm Salal Ali · Qatar</a>
+        <a class="hero__eyebrow hero__eyebrow--branch reveal" href="https://www.google.com/maps/search/?api=1&query=25.27364730834961,51.50154495239258" target="_blank" rel="noopener" data-en="Mirqab Mall · Qatar" data-ar="مجمع مرقاب · قطر">Mirqab Mall · Qatar</a>
         <h1 class="hero__title">
           <span class="reveal" data-en="TRAIN WITH" data-ar="تدرّب مع">TRAIN WITH</span>
           <span class="reveal hero__title--gold" data-en="THE MOB" data-ar="الـ موب">THE MOB</span>
@@ -380,7 +380,7 @@
 
       <div class="gallery__grid" id="galleryGrid">
         <!-- Um Salal -->
-        <figure class="gallery__item gallery__item--lg reveal" data-loc="um-salal" data-label-en="Gear" data-label-ar="معدات">
+        <figure class="gallery__item gallery__item--lg reveal" data-loc="um-salal" data-label-en="Apparel" data-label-ar="الملابس">
           <picture><source srcset="images/gallery/cage.webp" type="image/webp">
           <img src="images/gallery/cage.jpg" alt="The MOB Gym competition cage" loading="lazy" onerror="this.closest('picture').remove()"></picture>
         </figure>
@@ -396,11 +396,11 @@
           <picture><source srcset="images/gallery/gear.webp" type="image/webp">
           <img src="images/gallery/gear.jpg" alt="MOB gear and uniforms" loading="lazy" onerror="this.closest('picture').remove()"></picture>
         </figure>
-        <figure class="gallery__item reveal" data-loc="um-salal" data-label-en="The Octagon" data-label-ar="الحلبة">
+        <figure class="gallery__item reveal" data-loc="um-salal" data-label-en="Entrance" data-label-ar="المدخل">
           <picture><source srcset="images/gallery/inside.webp" type="image/webp">
           <img src="images/gallery/inside.jpg" alt="Inside The MOB Gym" loading="lazy" onerror="this.closest('picture').remove()"></picture>
         </figure>
-        <figure class="gallery__item gallery__item--wide reveal" data-loc="um-salal" data-label-en="Training Floor" data-label-ar="صالة التدريب">
+        <figure class="gallery__item gallery__item--wide reveal" data-loc="um-salal" data-label-en="Gym" data-label-ar="الصالة">
           <picture><source srcset="images/gallery/floor.webp" type="image/webp">
           <img src="images/gallery/floor.jpg" alt="Main training floor" loading="lazy" onerror="this.closest('picture').remove()"></picture>
         </figure>
@@ -409,7 +409,7 @@
         <figure class="gallery__item gallery__item--lg reveal" data-loc="mirqab" data-label-en="Entrance" data-label-ar="المدخل">
           <img src="images/gallery/mirqab-1.jpg" alt="Mirqab Mall entrance corridor" loading="lazy" onerror="this.closest('figure').style.display='none'">
         </figure>
-        <figure class="gallery__item reveal" data-loc="mirqab" data-label-en="Gear Wall" data-label-ar="معدات">
+        <figure class="gallery__item reveal" data-loc="mirqab" data-label-en="Mats" data-label-ar="البساط">
           <img src="images/gallery/mirqab-2.jpg" alt="MOB gear rack" loading="lazy" onerror="this.closest('figure').style.display='none'">
         </figure>
         <figure class="gallery__item reveal" data-loc="mirqab" data-label-en="Activity Hall" data-label-ar="قاعة النشاط">
@@ -427,81 +427,15 @@
       </div>
     </section>
 
-    <!-- ====== Shop ====== -->
-    <section class="shop section" id="shop">
-      <div class="section__head">
+    <!-- ====== Shop CTA ====== -->
+    <section class="shop-cta section" id="shop">
+      <div class="shop-cta__inner reveal">
+        <img src="images/logo-mark-gold.png" alt="" class="shop-cta__mark" />
         <span class="section__kicker" data-en="07 — MOB Store" data-ar="07 — متجر النادي">07 — MOB Store</span>
-        <h2 class="section__title reveal" data-en="Gear Up" data-ar="جهّز عدّتك">Gear Up</h2>
+        <h2 class="shop-cta__title" data-en="Gear Up.<br>Train Different." data-ar="جهّز عدّتك.<br>درّب بأسلوب مختلف.">Gear Up.<br>Train Different.</h2>
+        <p class="shop-cta__sub" data-en="Official MOB apparel, gloves, and equipment — built for fighters." data-ar="ملابس وقفازات ومعدات MOB الرسمية — مصنوعة للمقاتلين.">Official MOB apparel, gloves, and equipment — built for fighters.</p>
+        <a href="shop.html" class="btn btn--gold shop-cta__btn" data-en="Shop Now →" data-ar="← تسوّق الآن">Shop Now →</a>
       </div>
-
-      <div class="shop__grid">
-        <article class="product reveal">
-          <div class="product__img" data-icon="gloves">
-            <img src="images/shop/gloves.jpg" alt="MOB boxing gloves" loading="lazy" onerror="this.remove()">
-          </div>
-          <div class="product__body">
-            <h3 data-en="Boxing Gloves" data-ar="قفازات ملاكمة">Boxing Gloves</h3>
-            <p class="product__desc" data-en="MOB-branded sparring gloves" data-ar="قفازات سبارينغ بعلامة MOB">MOB-branded sparring gloves</p>
-            <a class="product__btn" data-product="Boxing Gloves" data-en="Order on WhatsApp" data-ar="اطلب عبر واتساب">Order on WhatsApp</a>
-          </div>
-        </article>
-
-        <article class="product reveal">
-          <div class="product__img" data-icon="headgear">
-            <img src="images/shop/headgear.jpg" alt="MOB head guard" loading="lazy" onerror="this.remove()">
-          </div>
-          <div class="product__body">
-            <h3 data-en="Head Guard" data-ar="خوذة حماية">Head Guard</h3>
-            <p class="product__desc" data-en="Protective sparring headgear" data-ar="خوذة حماية للسبارينغ">Protective sparring headgear</p>
-            <a class="product__btn" data-product="Head Guard" data-en="Order on WhatsApp" data-ar="اطلب عبر واتساب">Order on WhatsApp</a>
-          </div>
-        </article>
-
-        <article class="product reveal">
-          <div class="product__img" data-icon="gi">
-            <img src="images/shop/gi.jpg" alt="MOB Jiu-Jitsu gi" loading="lazy" onerror="this.remove()">
-          </div>
-          <div class="product__body">
-            <h3 data-en="BJJ Gi / Uniform" data-ar="بدلة جيوجيتسو">BJJ Gi / Uniform</h3>
-            <p class="product__desc" data-en="Official MOB Jiu-Jitsu kimono" data-ar="كيمونو جيوجيتسو الرسمي">Official MOB Jiu-Jitsu kimono</p>
-            <a class="product__btn" data-product="BJJ Gi" data-en="Order on WhatsApp" data-ar="اطلب عبر واتساب">Order on WhatsApp</a>
-          </div>
-        </article>
-
-        <article class="product reveal">
-          <div class="product__img" data-icon="shin">
-            <img src="images/shop/shinguards.jpg" alt="MOB shin guards" loading="lazy" onerror="this.remove()">
-          </div>
-          <div class="product__body">
-            <h3 data-en="Shin Guards" data-ar="واقيات السيقان">Shin Guards</h3>
-            <p class="product__desc" data-en="Muay Thai shin protectors" data-ar="واقيات سيقان للمواي تاي">Muay Thai shin protectors</p>
-            <a class="product__btn" data-product="Shin Guards" data-en="Order on WhatsApp" data-ar="اطلب عبر واتساب">Order on WhatsApp</a>
-          </div>
-        </article>
-
-        <article class="product reveal">
-          <div class="product__img" data-icon="rashguard">
-            <img src="images/shop/rashguard.jpg" alt="MOB rashguard" loading="lazy" onerror="this.remove()">
-          </div>
-          <div class="product__body">
-            <h3 data-en="Rashguard" data-ar="رشغارد">Rashguard</h3>
-            <p class="product__desc" data-en="Training top — MOB colors" data-ar="تيشيرت تدريب بألوان MOB">Training top — MOB colors</p>
-            <a class="product__btn" data-product="Rashguard" data-en="Order on WhatsApp" data-ar="اطلب عبر واتساب">Order on WhatsApp</a>
-          </div>
-        </article>
-
-        <article class="product reveal">
-          <div class="product__img" data-icon="bag">
-            <img src="images/shop/bag.jpg" alt="MOB gym bag" loading="lazy" onerror="this.remove()">
-          </div>
-          <div class="product__body">
-            <h3 data-en="Gym Bag" data-ar="حقيبة رياضية">Gym Bag</h3>
-            <p class="product__desc" data-en="Carry your gear in style" data-ar="احمل عدّتك بأناقة">Carry your gear in style</p>
-            <a class="product__btn" data-product="Gym Bag" data-en="Order on WhatsApp" data-ar="اطلب عبر واتساب">Order on WhatsApp</a>
-          </div>
-        </article>
-      </div>
-      <p class="shop__note" data-en="Tap any product to order directly via WhatsApp. Add product photos in /images/shop." data-ar="اضغط أي منتج للطلب مباشرة عبر واتساب. أضف صور المنتجات في /images/shop.">Tap any product to order directly via WhatsApp. Add product photos in /images/shop.</p>
     </section>
 
     <!-- ====== Contact / Booking ====== -->
@@ -523,7 +457,7 @@
             <span class="loc-card__sub" data-en="Umm Salal Ali, Qatar" data-ar="أم صلال علي، قطر">Umm Salal Ali, Qatar</span>
             <span class="loc-card__cta" data-en="Get Directions →" data-ar="← احصل على الاتجاهات">Get Directions →</span>
           </a>
-          <a class="loc-card" href="https://www.bing.com/maps/directions?ty=0&v=2&sV=1&style=r&rtp=%7Epos.25.27364730834961_51.50154495239258__Mirqab%2520Mall_&cp=25.273647%7E51.501545&lvl=16" target="_blank" rel="noopener">
+          <a class="loc-card" href="https://www.google.com/maps/search/?api=1&query=25.27364730834961,51.50154495239258" target="_blank" rel="noopener">
             <div class="loc-card__bg"></div>
             <span class="loc-card__pin">
               <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7m0 9.5A2.5 2.5 0 0 1 9.5 9 2.5 2.5 0 0 1 12 6.5 2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5z"/></svg>
@@ -540,8 +474,15 @@
             <span class="contact__card-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path fill="currentColor" d="M.06 24l1.69-6.16a11.87 11.87 0 0 1-1.59-5.95C.16 5.34 5.5 0 12.06 0a11.82 11.82 0 0 1 8.41 3.49 11.82 11.82 0 0 1 3.48 8.42c0 6.55-5.34 11.89-11.9 11.89a11.9 11.9 0 0 1-5.69-1.45L.06 24zm6.6-3.81c1.68 1 3.28 1.6 5.4 1.6 5.45 0 9.89-4.43 9.89-9.88A9.86 9.86 0 0 0 12.06 2 9.88 9.88 0 0 0 2.17 11.9c0 2.22.65 3.88 1.74 5.62l-1 3.66 3.75-.99zm11.39-5.27c-.07-.12-.27-.2-.57-.35-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48a8.94 8.94 0 0 1-1.66-2.06c-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.21-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42z"/></svg>
             </span>
-            <span class="contact__card-label" data-en="WhatsApp / Call" data-ar="واتساب / اتصال">WhatsApp / Call</span>
+            <span class="contact__card-label" data-en="WhatsApp · Um Salal" data-ar="واتساب · أم صلال">WhatsApp · Um Salal</span>
             <span class="contact__card-value">+974 5121 8181</span>
+          </a>
+          <a class="contact__card" href="https://wa.me/97470509065" target="_blank" rel="noopener">
+            <span class="contact__card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M.06 24l1.69-6.16a11.87 11.87 0 0 1-1.59-5.95C.16 5.34 5.5 0 12.06 0a11.82 11.82 0 0 1 8.41 3.49 11.82 11.82 0 0 1 3.48 8.42c0 6.55-5.34 11.89-11.9 11.89a11.9 11.9 0 0 1-5.69-1.45L.06 24zm6.6-3.81c1.68 1 3.28 1.6 5.4 1.6 5.45 0 9.89-4.43 9.89-9.88A9.86 9.86 0 0 0 12.06 2 9.88 9.88 0 0 0 2.17 11.9c0 2.22.65 3.88 1.74 5.62l-1 3.66 3.75-.99zm11.39-5.27c-.07-.12-.27-.2-.57-.35-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48a8.94 8.94 0 0 1-1.66-2.06c-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.21-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42z"/></svg>
+            </span>
+            <span class="contact__card-label" data-en="WhatsApp · Mirqab" data-ar="واتساب · مرقاب">WhatsApp · Mirqab</span>
+            <span class="contact__card-value">+974 7050 9065</span>
           </a>
           <a class="contact__card" href="https://instagram.com/themobgym" target="_blank" rel="noopener">
             <span class="contact__card-icon" aria-hidden="true">
