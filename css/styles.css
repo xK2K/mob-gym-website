@@ -287,6 +287,11 @@ html[lang="ar"] .about__quote { font-family: var(--font-ar); font-weight: 700; }
 html[lang="ar"] .feature h3 { font-family: var(--font-ar); font-weight: 700; }
 .feature p { font-size: .9rem; color: var(--gray); }
 
+/* Compact feature chips (About section) */
+.about__features--compact { grid-template-columns: repeat(3, 1fr); gap: .6rem; align-content: start; }
+.about__features--compact .feature { padding: .7rem .5rem; text-align: center; border-radius: 10px; }
+.about__features--compact .feature h3 { font-size: .85rem; margin-bottom: 0; }
+
 /* ===================================================================
    SPORTS
    =================================================================== */
