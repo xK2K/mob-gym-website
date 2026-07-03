@@ -4,10 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Product — THE MOB STORE</title>
+  <meta name="description" content="Official THE MOB GYM gear. Order via WhatsApp with free shipping across Qatar." />
+  <meta property="og:type" content="product" />
+  <meta property="og:title" content="THE MOB STORE — Official Gear" />
+  <meta property="og:description" content="Official THE MOB GYM combat sports gear — delivered across Qatar." />
+  <meta property="og:image" content="images/logo-mark-gold.png" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="images/logo-mark-gold.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/shop.css" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-R5HG57J2L8"></script>
@@ -115,7 +121,7 @@
 <script src="js/store.js"></script>
 <script>
 (function () {
-  var lang = localStorage.getItem('mob_lang') || 'en';
+  var lang = localStorage.getItem('mob-lang') || 'ar';
   var selectedSize = null;
   var productId = new URLSearchParams(location.search).get('id');
   var product = PRODUCTS.find(function (p) { return p.id === productId; });
@@ -128,7 +134,7 @@
     lang = l;
     document.documentElement.lang = l;
     document.documentElement.dir = l === 'ar' ? 'rtl' : 'ltr';
-    localStorage.setItem('mob_lang', l);
+    localStorage.setItem('mob-lang', l);
     document.getElementById('langToggle').textContent = l === 'ar' ? 'EN' : 'AR';
     document.querySelectorAll('[data-en]').forEach(function (el) {
       var key = l === 'ar' ? 'ar' : 'en';

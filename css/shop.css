@@ -56,6 +56,13 @@
   display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;
   max-width: 1280px; margin: 3rem auto; padding: 0 2rem;
 }
+.store-empty {
+  grid-column: 1 / -1; display: flex; flex-direction: column; align-items: center;
+  gap: 1rem; padding: 4.5rem 1.5rem; text-align: center; color: var(--gray);
+}
+.store-empty svg { color: var(--purple); opacity: .8; }
+.store-empty p { font-size: 1.05rem; font-weight: 600; color: var(--gray-soft); }
+html[lang="ar"] .store-empty p { font-family: var(--font-ar); }
 .product-card {
   background: var(--surface); border: 1px solid rgba(255,255,255,.07);
   border-radius: var(--radius); overflow: hidden; cursor: pointer;

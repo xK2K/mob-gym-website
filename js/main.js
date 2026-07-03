@@ -68,15 +68,15 @@
     });
   }
 
-  // restore saved language
+  // restore saved language (Arabic-first: default to AR unless user chose EN)
   try {
     var saved = localStorage.getItem('mob-lang');
-    if (saved === 'ar') applyLang('ar');
+    if (saved !== 'en') applyLang('ar');
   } catch (e) {}
 
   /* ---------- Stagger: index children within grids for cascade ---------- */
   var staggerContainers = document.querySelectorAll(
-    '.sports__grid, .pricing__grid, .shop__grid, .coaches__grid, .gallery__grid, .schedule__grid, .about__features, .contact__cards, .hero__content, .hero__cta'
+    '.sports__grid, .pricing__grid, .shop__grid, .coaches__grid, .gallery__grid, .schedule__grid, .about__features, .contact__cards, .hero__content, .hero__cta, .testi__grid'
   );
   staggerContainers.forEach(function (container) {
     var i = 0;

@@ -4,10 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>THE MOB STORE — Official Gear</title>
+  <meta name="description" content="Official THE MOB GYM gear — boxing gloves, head guards, shin guards, BJJ gis and gear bags. Order via WhatsApp with free shipping across Qatar." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="THE MOB STORE — Official Gear" />
+  <meta property="og:description" content="Train in gear that hits different. Official THE MOB GYM combat sports gear — delivered across Qatar." />
+  <meta property="og:image" content="images/logo-mark-gold.png" />
+  <meta property="og:url" content="https://www.themobgym.com/shop.html" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="images/logo-mark-gold.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/shop.css" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-R5HG57J2L8"></script>
@@ -53,8 +60,8 @@
 <section class="store-hero">
   <div class="store-hero__bg"></div>
   <p class="store-hero__kicker" data-en="Official MOB Gear" data-ar="معدات MOB الرسمية">Official MOB Gear</p>
-  <h1 class="store-hero__title reveal" data-en="THE MOB<br>STORE" data-ar="متجر<br>THE MOB">THE MOB<br>STORE</h1>
-  <p class="store-hero__sub reveal" data-en="Train in gear that hits different." data-ar="درّب بمعدات تفرق.">Train in gear that hits different.</p>
+  <h1 class="store-hero__title" data-en="THE MOB<br>STORE" data-ar="متجر<br>THE MOB">THE MOB<br>STORE</h1>
+  <p class="store-hero__sub" data-en="Train in gear that hits different." data-ar="درّب بمعدات تفرق.">Train in gear that hits different.</p>
 </section>
 
 <!-- ── Filters ── -->
@@ -73,7 +80,7 @@
 
 <!-- ── Store footer ── -->
 <footer class="store-footer">
-  <p data-en="© 2025 THE MOB GYM. All rights reserved." data-ar="© 2025 THE MOB GYM. جميع الحقوق محفوظة.">© 2025 THE MOB GYM. All rights reserved.</p>
+  <p data-en="© 2026 THE MOB GYM. All rights reserved." data-ar="© 2026 THE MOB GYM. جميع الحقوق محفوظة.">© 2026 THE MOB GYM. All rights reserved.</p>
 </footer>
 
 <!-- ── Cart sidebar ── -->
@@ -114,12 +121,12 @@
 <script>
 (function () {
   /* ── Language ── */
-  var lang = localStorage.getItem('mob_lang') || 'en';
+  var lang = localStorage.getItem('mob-lang') || 'ar';
   function applyLang(l) {
     lang = l;
     document.documentElement.lang = l;
     document.documentElement.dir = l === 'ar' ? 'rtl' : 'ltr';
-    localStorage.setItem('mob_lang', l);
+    localStorage.setItem('mob-lang', l);
     document.getElementById('langToggle').textContent = l === 'ar' ? 'EN' : 'AR';
     document.querySelectorAll('[data-en]').forEach(function (el) {
       var key = l === 'ar' ? 'ar' : 'en';
@@ -131,7 +138,7 @@
   document.getElementById('langToggle').addEventListener('click', function () { applyLang(lang === 'ar' ? 'en' : 'ar'); });
 
   /* ── Product categories ── */
-  var CAT_MAP = { gloves: 'gloves', headgear: 'protection', gi: 'apparel', bag: 'bags' };
+  var CAT_MAP = { gloves: 'gloves', headgear: 'protection', shinguard: 'protection', gi: 'apparel', bag: 'bags' };
   var activeCat = 'all';
 
   /* ── Render grid ── */
@@ -160,6 +167,15 @@
         '</div>';
       grid.appendChild(card);
     });
+    /* empty state */
+    if (!grid.children.length) {
+      grid.innerHTML =
+        '<div class="store-empty">' +
+          '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" width="46" height="46"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>' +
+          '<p>' + (lang === 'ar' ? 'لا توجد منتجات في هذا القسم حالياً' : 'No products in this category yet') + '</p>' +
+        '</div>';
+      return;
+    }
     /* trigger reveal */
     setTimeout(function () {
       grid.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-visible'); });
