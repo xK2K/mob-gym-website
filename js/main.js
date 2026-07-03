@@ -104,6 +104,18 @@
     reveals.forEach(function (el) { io.observe(el); });
   }
 
+  /* ---------- Growing member count: +step every N days ---------- */
+  document.querySelectorAll('[data-grow-base]').forEach(function (el) {
+    var base = parseInt(el.getAttribute('data-grow-base'), 10);
+    var start = new Date(el.getAttribute('data-grow-start') + 'T00:00:00');
+    var step = parseInt(el.getAttribute('data-grow-step'), 10) || 1;
+    var every = parseInt(el.getAttribute('data-grow-every'), 10) || 1;
+    var days = Math.floor((Date.now() - start.getTime()) / 86400000);
+    if (days > 0) base += Math.floor(days / every) * step;
+    el.setAttribute('data-count', base);
+    el.textContent = base;
+  });
+
   /* ---------- Animated counters ---------- */
   var counters = document.querySelectorAll('[data-count]');
   function animateCount(el) {

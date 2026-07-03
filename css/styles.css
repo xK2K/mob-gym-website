@@ -131,8 +131,8 @@ html[lang="ar"] .btn { font-family: var(--font-ar); letter-spacing: .04em; font-
 }
 /* single hairline underline, centre-grown */
 .nav__links a::after {
-  content: ''; position: absolute; left: 50%; bottom: 0; width: 0; height: 1px;
-  background: var(--gold);
+  content: ''; position: absolute; left: 50%; bottom: 0; width: 0; height: 2px;
+  background: linear-gradient(90deg, var(--gold), var(--purple));
   transform: translateX(-50%); transition: width .4s var(--ease);
 }
 .nav__links a:hover,
@@ -326,8 +326,8 @@ html[lang="ar"] .about__features--compact .feature h3 { font-size: .85rem; }
   transition: border-color .5s var(--ease), background .5s var(--ease), transform .5s var(--ease);
 }
 .sport::before {
-  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px;
-  background: var(--gold);
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, var(--gold), var(--purple));
   transform: scaleX(0); transform-origin: center; transition: transform .6s var(--ease);
 }
 .sport:hover, .sport:focus-visible {
@@ -599,7 +599,7 @@ html[lang="ar"] .testi-card__tag { font-family: var(--font-ar); letter-spacing: 
    =================================================================== */
 .coaches__feature {
   position: relative; overflow: hidden;
-  background: transparent;
+  background: linear-gradient(160deg, rgba(85,37,131,.22), transparent 70%);
   border: 1px solid var(--hairline-dim); border-radius: var(--radius);
   padding: 3.5rem 2rem; display: flex; justify-content: center; align-items: center;
 }
@@ -753,7 +753,7 @@ html[lang="ar"] .loc-card__cta { letter-spacing: 0; direction: rtl; }
 .contact__card:hover .contact__card-icon { background: var(--gold); color: var(--black); border-color: var(--gold); }
 .contact__card-icon {
   display: grid; place-items: center; width: 38px; height: 38px; margin-bottom: .4rem;
-  border-radius: 50%; background: transparent; border: 1px solid var(--hairline); color: var(--gold);
+  border-radius: 50%; background: rgba(85,37,131,.35); border: 1px solid var(--hairline); color: var(--gold);
   transition: background .4s, color .4s, border-color .4s;
 }
 .contact__card-icon svg { width: 18px; height: 18px; }
@@ -1042,7 +1042,7 @@ html[dir="rtl"] .wa-float { right: auto; left: 1.8rem; }
     -webkit-overflow-scrolling: touch; scrollbar-width: none;
   }
   .sports__grid::-webkit-scrollbar, .pricing__grid::-webkit-scrollbar { display: none; }
-  .sport, .price-card { scroll-snap-align: start; min-width: 80%; flex-shrink: 0; }
+  .sport, .price-card { scroll-snap-align: start; min-width: 68%; flex-shrink: 0; }
   .coaches__grid, .about__features, .shop__grid, .schedule__grid { grid-template-columns: 1fr; }
   .contact__cards { grid-template-columns: repeat(3, 1fr); }
   .contact__locations { grid-template-columns: 1fr; }
@@ -1223,4 +1223,50 @@ html[lang="ar"] .session-toast__btn { letter-spacing: 0; font-family: var(--font
   .lb-arrow--prev { left: .4rem; }
   .lb-arrow--next { right: .4rem; }
   .lb-arrow { width: 40px; height: 40px; }
+}
+
+
+/* ===================================================================
+   LAKERS SOUL — ambient colour + living feature chips
+   =================================================================== */
+/* faint championship glow behind key sections */
+.about, .testi { position: relative; }
+.about::before {
+  content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background: radial-gradient(ellipse 55% 45% at 88% 8%, rgba(85,37,131,.22), transparent 65%);
+}
+.testi::before {
+  content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background: radial-gradient(ellipse 50% 40% at 10% 15%, rgba(85,37,131,.16), transparent 65%);
+}
+
+/* about feature chips — alive: purple wash, gold spark, white text */
+.about__features--compact .feature {
+  position: relative;
+  background: linear-gradient(180deg, rgba(85,37,131,.22), rgba(85,37,131,.05));
+  border: 1px solid rgba(85,37,131,.5);
+  transition: border-color .4s var(--ease), background .4s var(--ease), transform .4s var(--ease);
+}
+.about__features--compact .feature::before {
+  content: ''; display: block; width: 18px; height: 2px; margin: 0 auto .55rem;
+  background: var(--gold);
+  transition: width .4s var(--ease);
+}
+.about__features--compact .feature h3 { color: var(--white); }
+.about__features--compact .feature:hover {
+  transform: translateY(-3px);
+  border-color: var(--gold);
+  background: linear-gradient(180deg, rgba(85,37,131,.4), rgba(85,37,131,.1));
+}
+.about__features--compact .feature:hover::before { width: 34px; }
+.about__features--compact .feature:hover h3 { color: var(--gold); }
+
+/* mobile: keep the chips small — two per row, tight padding */
+@media (max-width: 760px) {
+  .about__features.about__features--compact { grid-template-columns: repeat(2, 1fr); gap: .5rem; }
+  .about__features--compact .feature { padding: .75rem .4rem; }
+  .about__features--compact .feature h3 { font-size: .78rem; }
+  .sport { padding: 1.7rem 1.4rem; }
+  .sport__name { font-size: 1.15rem; }
+  html[lang="ar"] .sport__name { font-size: 1.25rem; }
 }
