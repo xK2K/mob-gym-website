@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>THE MOB GYM — MMA & Combat Sports · Umm Salal Ali & Mirqab Mall, Qatar</title>
-  <meta name="description" content="THE MOB GYM — Premier MMA, Jiu-Jitsu, Muay Thai, Kickboxing & Boxing academy with two branches: Umm Salal Ali & Mirqab Mall, Qatar. Train with the pack." />
+  <title>THE MOB GYM — Boxing, Muay Thai, Kickboxing & BJJ · Umm Salal Ali & Mirqab Mall, Qatar</title>
+  <meta name="description" content="THE MOB GYM — Boxing, Muay Thai, Kickboxing, Brazilian Jiu-Jitsu, Taekwondo and Karate for adults, kids and women. Two branches in Qatar: Umm Salal Ali & Mirqab Mall. First session free." />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="THE MOB GYM — Train With The Pack" />
-  <meta property="og:description" content="MMA · Jiu-Jitsu · Muay Thai · Kickboxing · Boxing · Fitness — Umm Salal Ali & Mirqab Mall, Qatar" />
+  <meta property="og:title" content="THE MOB GYM — Train Different" />
+  <meta property="og:description" content="Boxing · Muay Thai · Kickboxing · BJJ · Taekwondo · Karate — Umm Salal Ali & Mirqab Mall, Qatar. First session free." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="images/favicon-512.png" />
+  <meta property="og:image" content="images/gallery/floor.jpg" />
   <meta name="theme-color" content="#552583" />
   <meta name="twitter:card" content="summary_large_image" />
 
@@ -40,17 +40,17 @@
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180.png" />
   <link rel="manifest" href="site.webmanifest" />
 
-  <!-- Local business structured data (helps Google search results) -->
+  <!-- Local business structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SportsActivityLocation",
     "name": "THE MOB GYM",
-    "description": "MMA, Jiu-Jitsu, Muay Thai, Kickboxing, Boxing and Fitness academy — two branches: Umm Salal Ali and Mirqab Mall, Qatar.",
-    "image": "images/favicon-512.png",
+    "description": "Boxing, Muay Thai, Kickboxing, Brazilian Jiu-Jitsu, Taekwondo, Karate, Fitness and Gymnastics academy for adults, kids and women — two branches: Umm Salal Ali and Mirqab Mall, Qatar.",
+    "image": "images/gallery/floor.jpg",
     "telephone": "+97451218181",
     "address": { "@type": "PostalAddress", "addressLocality": "Umm Salal Ali", "addressCountry": "QA" },
-    "openingHours": "Mo-Su 16:00-22:00",
+    "openingHours": "Sa-Th 15:00-21:00",
     "sameAs": [
       "https://instagram.com/themobgym",
       "https://www.tiktok.com/@themobgym",
@@ -61,579 +61,664 @@
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preload" as="image" href="images/gallery/inside.webp" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@300;400;500;600&family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="images/gallery/floor.webp" type="image/webp" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,500..900&family=Inter:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
-  <!-- ====== Loader ====== -->
-  <div class="loader" id="loader" aria-hidden="true">
-    <div class="loader__logo">
-      <img src="images/logo-mark-gold.png" alt="" class="loader__gorilla">
-    </div>
-    <div class="loader__bar"><span></span></div>
-  </div>
-
   <!-- ====== Header / Nav ====== -->
   <header class="nav" id="nav">
-    <div class="nav__inner">
-      <a href="#hero" class="nav__brand" aria-label="THE MOB GYM home">
-        <img src="images/logo-mark-gold.png" alt="" class="nav__mark">
-        <span class="nav__name">THE MOB</span>
+    <div class="nav__inner container">
+      <a href="#top" class="nav__brand" aria-label="THE MOB GYM home">
+        <img src="images/logo-mark-gold.png" alt="" class="nav__mark" width="34" height="34">
+        <span class="nav__word">THE MOB</span>
       </a>
 
       <nav class="nav__links" aria-label="Primary">
-        <a href="#about" data-en="About" data-ar="عن النادي">About</a>
-        <a href="#sports" data-en="Sports" data-ar="الرياضات">Sports</a>
-        <a href="#classes" data-en="Classes" data-ar="الكلاسات">Classes</a>
-        <a href="#pricing" data-en="Pricing" data-ar="الأسعار">Pricing</a>
-        <a href="#coaches" data-en="Coaches" data-ar="المدربين">Coaches</a>
+        <a href="#programs" data-en="Programs" data-ar="البرامج">Programs</a>
+        <a href="#coaches" data-en="Coaches" data-ar="المدربون">Coaches</a>
+        <a href="#schedule" data-en="Schedule" data-ar="الجدول">Schedule</a>
+        <a href="#pricing" data-en="Membership" data-ar="الأسعار">Membership</a>
         <a href="#gallery" data-en="Gallery" data-ar="المعرض">Gallery</a>
         <a href="https://themobgym.shop" data-en="Shop" data-ar="المتجر">Shop</a>
-        <a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a>
+        <a href="#locations" data-en="Locations" data-ar="المواقع">Locations</a>
       </nav>
 
       <div class="nav__actions">
-        <button class="lang-toggle" id="langToggle" aria-label="Switch language">
-          <span data-en="عربي" data-ar="EN">عربي</span>
-        </button>
-        <a href="#contact" class="btn btn--gold nav__cta" data-en="Join Now" data-ar="انضم الآن">Join Now</a>
-        <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
+        <button class="lang-toggle" type="button" aria-label="Switch language"><span data-en="عربي" data-ar="EN">عربي</span></button>
+        <a href="#contact" class="btn btn--sm nav__cta"><span data-en="Book a Trial" data-ar="احجز حصة">Book a Trial</span></a>
+        <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
       </div>
     </div>
   </header>
 
-  <main>
+  <!-- ====== Fullscreen menu (mobile / tablet) ====== -->
+  <div class="menu" id="menu" aria-label="Menu">
+    <ul class="menu__links" data-stagger>
+      <li><a href="#programs" style="--i:0" data-en="Programs" data-ar="البرامج">Programs</a></li>
+      <li><a href="#coaches" style="--i:1" data-en="Coaches" data-ar="المدربون">Coaches</a></li>
+      <li><a href="#schedule" style="--i:2" data-en="Schedule" data-ar="الجدول">Schedule</a></li>
+      <li><a href="#pricing" style="--i:3" data-en="Membership" data-ar="الأسعار">Membership</a></li>
+      <li><a href="#gallery" style="--i:4" data-en="Gallery" data-ar="المعرض">Gallery</a></li>
+      <li><a href="https://themobgym.shop" style="--i:5" data-en="Shop" data-ar="المتجر">Shop</a></li>
+      <li><a href="#locations" style="--i:6" data-en="Locations" data-ar="المواقع">Locations</a></li>
+      <li><a href="#contact" style="--i:7" data-en="Book a Free Trial" data-ar="احجز حصة مجانية">Book a Free Trial</a></li>
+    </ul>
+    <div class="menu__foot">
+      <button class="lang-toggle" type="button" aria-label="Switch language"><span data-en="عربي" data-ar="EN">عربي</span></button>
+      <a class="btn btn--sm btn--primary" href="https://wa.me/97451218181" target="_blank" rel="noopener"><span data-en="WhatsApp" data-ar="واتساب">WhatsApp</span></a>
+      <a class="btn btn--sm btn--outline" href="tel:+97451218181"><span>+974 5121 8181</span></a>
+    </div>
+  </div>
+
+  <main id="top">
+
     <!-- ====== Hero ====== -->
     <section class="hero" id="hero">
-      <img src="images/logo-mark-white.png" alt="" class="hero__watermark">
-      <div class="hero__cage" aria-hidden="true"></div>
+      <div class="hero__media">
+        <picture>
+          <source srcset="images/gallery/floor.webp" type="image/webp">
+          <img src="images/gallery/floor.jpg" alt="The Mob Gym training floor and competition cage" fetchpriority="high">
+        </picture>
+      </div>
+      <div class="hero__shade" aria-hidden="true"></div>
 
-      <div class="hero__content">
-        <a class="hero__eyebrow reveal" href="https://www.google.com/maps/place/The+Mob+MMA+GYM/@25.473776,51.3893833,17z/data=!3m1!4b1!4m6!3m5!1s0x3e45e3814b642643:0x59ee4d5ef29e9427!8m2!3d25.473776!4d51.3893833!16s%2Fg%2F11trq_2cdt" target="_blank" rel="noopener" data-en="Umm Salal Ali · Qatar" data-ar="أم صلال علي · قطر">Umm Salal Ali · Qatar</a>
-        <a class="hero__eyebrow hero__eyebrow--branch reveal" href="https://www.google.com/maps/search/?api=1&query=25.27364730834961,51.50154495239258" target="_blank" rel="noopener" data-en="Mirqab Mall · Qatar" data-ar="مجمع مرقاب · قطر">Mirqab Mall · Qatar</a>
+      <div class="hero__content container">
+        <p class="hero__eyebrow"><span data-en="Umm Salal Ali · Mirqab Mall — Qatar" data-ar="أم صلال علي · مرقاب مول — قطر">Umm Salal Ali · Mirqab Mall — Qatar</span></p>
         <h1 class="hero__title">
-          <span class="reveal" data-en="TRAIN WITH" data-ar="تدرّب مع">TRAIN WITH</span>
-          <span class="reveal hero__title--gold" data-en="THE MOB" data-ar="ذا موب">THE MOB</span>
+          <span class="hero__line"><span data-en="Train" data-ar="تدرّب">Train</span></span>
+          <span class="hero__line"><span data-en="Different." data-ar="بشكل مختلف.">Different.</span></span>
         </h1>
-        <p class="hero__sub reveal" data-en="MMA · Jiu-Jitsu · Muay Thai · Kickboxing · Boxing · Fitness. Step into the cage where champions are forged." data-ar="فنون قتال مختلطة · جيوجيتسو · مواي تاي · كيك بوكسينج · ملاكمة · لياقة. ادخل القفص حيث يُصنع الأبطال.">MMA · Jiu-Jitsu · Muay Thai · Kickboxing · Boxing · Fitness. Step into the cage where champions are forged.</p>
-        <div class="hero__cta reveal">
-          <a href="#contact" class="btn btn--gold" data-en="Start Training" data-ar="ابدأ التدريب">Start Training</a>
-          <a href="#sports" class="btn btn--ghost" data-en="Explore Sports" data-ar="استكشف الرياضات">Explore Sports</a>
+        <p class="hero__sub" data-en="Boxing · Muay Thai · Kickboxing · BJJ" data-ar="ملاكمة · مواي تاي · كيك بوكسينج · جيوجيتسو">Boxing · Muay Thai · Kickboxing · BJJ</p>
+        <div class="hero__cta">
+          <a href="#contact" class="btn btn--gold btn--lg"><span data-en="Book a Free Trial" data-ar="احجز حصة مجانية">Book a Free Trial</span></a>
+          <a href="#schedule" class="btn btn--outline-light btn--lg"><span data-en="View Schedule" data-ar="شاهد الجدول">View Schedule</span></a>
         </div>
       </div>
 
-      <div class="hero__stats reveal">
-        <div class="stat"><span class="stat__num" data-count="8">8</span><span class="stat__label" data-en="Sports" data-ar="رياضات">Sports</span></div>
-        <div class="stat"><span class="stat__num" data-count="500" data-grow-base="500" data-grow-start="2026-07-03" data-grow-step="3" data-grow-every="2">500</span><span class="stat__suffix">+</span><span class="stat__label" data-en="Members" data-ar="متدرب">Members</span></div>
-        <div class="stat"><span class="stat__num" data-count="6">6</span><span class="stat__label" data-en="Days / Week" data-ar="أيام بالأسبوع">Days / Week</span></div>
-      </div>
-
-      <a href="#about" class="hero__scroll" aria-label="Scroll down"><span></span></a>
+      <a href="#programs" class="hero__scroll" aria-label="Scroll down">
+        <span class="hero__scroll-line" aria-hidden="true"></span>
+        <span data-en="Scroll" data-ar="اسحب">Scroll</span>
+      </a>
     </section>
 
-    <!-- ====== About ====== -->
-    <section class="about section" id="about">
-      <div class="section__head">
-        <span class="section__kicker" data-en="Who We Are" data-ar="من نحن">Who We Are</span>
-        <h2 class="section__title reveal" data-en="More Than A Gym. A Mob." data-ar="أكثر من نادٍ. عصابة واحدة">More Than A Gym. A Mob.</h2>
+    <!-- ====== Marquee ====== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span data-en="Boxing" data-ar="ملاكمة">Boxing</span>
+          <span data-en="Muay Thai" data-ar="مواي تاي">Muay Thai</span>
+          <span data-en="Kickboxing" data-ar="كيك بوكسينج">Kickboxing</span>
+          <span data-en="Brazilian Jiu-Jitsu" data-ar="جيوجيتسو">Brazilian Jiu-Jitsu</span>
+          <span data-en="Taekwondo" data-ar="تايكواندو">Taekwondo</span>
+          <span data-en="Karate" data-ar="كاراتيه">Karate</span>
+          <span data-en="Fitness" data-ar="لياقة">Fitness</span>
+          <span data-en="Gymnastics" data-ar="جمباز">Gymnastics</span>
+          <span data-en="Dance &amp; Zumba" data-ar="رقص وزومبا">Dance &amp; Zumba</span>
+          <span data-en="First Session Free" data-ar="الحصة الأولى مجانية">First Session Free</span>
+        </div>
+        <div class="marquee__group">
+          <span data-en="Boxing" data-ar="ملاكمة">Boxing</span>
+          <span data-en="Muay Thai" data-ar="مواي تاي">Muay Thai</span>
+          <span data-en="Kickboxing" data-ar="كيك بوكسينج">Kickboxing</span>
+          <span data-en="Brazilian Jiu-Jitsu" data-ar="جيوجيتسو">Brazilian Jiu-Jitsu</span>
+          <span data-en="Taekwondo" data-ar="تايكواندو">Taekwondo</span>
+          <span data-en="Karate" data-ar="كاراتيه">Karate</span>
+          <span data-en="Fitness" data-ar="لياقة">Fitness</span>
+          <span data-en="Gymnastics" data-ar="جمباز">Gymnastics</span>
+          <span data-en="Dance &amp; Zumba" data-ar="رقص وزومبا">Dance &amp; Zumba</span>
+          <span data-en="First Session Free" data-ar="الحصة الأولى مجانية">First Session Free</span>
+        </div>
       </div>
-      <div class="about__grid">
-        <div class="about__text reveal">
-          <p data-en="A full-contact combat sports academy with two branches — Umm Salal Ali & Mirqab Mall — world-class coaching across eight disciplines under one roof." data-ar="أكاديمية متكاملة للرياضات القتالية بفرعين — أم صلال علي والمرقاب مول — تدريب بمعايير عالمية في ثماني رياضات تحت سقف واحد.">A full-contact combat sports academy with two branches — Umm Salal Ali & Mirqab Mall — world-class coaching across eight disciplines under one roof.</p>
-        </div>
-        <div class="about__features about__features--compact reveal">
-          <div class="feature"><h3 data-en="Pro Cage" data-ar="قفص احترافي">Pro Cage</h3></div>
-          <div class="feature"><h3 data-en="Certified Coaches" data-ar="مدربون معتمدون">Certified Coaches</h3></div>
-          <div class="feature"><h3 data-en="Full Gear" data-ar="معدات كاملة">Full Gear</h3></div>
-          <div class="feature"><h3 data-en="Self Defense" data-ar="دفاع عن النفس">Self Defense</h3></div>
-          <div class="feature"><h3 data-en="Kids & Adults" data-ar="أطفال وكبار">Kids & Adults</h3></div>
-          <div class="feature"><h3 data-en="Summer Camp" data-ar="مخيمات صيفية">Summer Camp</h3></div>
-        </div>
-      </div>
-    </section>
+    </div>
 
-    <!-- ====== Sports ====== -->
-    <section class="sports section" id="sports">
-      <div class="section__head">
-        <span class="section__kicker" data-en="Disciplines" data-ar="الرياضات">Disciplines</span>
-        <h2 class="section__title reveal" data-en="Sports We Offer" data-ar="الرياضات التي نقدمها">Sports We Offer</h2>
-      </div>
-
-      <div class="sports__grid">
-
-        <article class="sport reveal" tabindex="0">
-          <span class="sport__index">01</span>
-          <h3 class="sport__name" data-en="Brazilian Jiu-Jitsu" data-ar="الجيوجيتسو">Brazilian Jiu-Jitsu</h3>
-          <p class="sport__desc" data-en="The gentle art — technique beats size through control and submissions." data-ar="الفن اللطيف — التقنية تتغلب على القوة بالسيطرة والإخضاع.">The gentle art — technique beats size through control and submissions.</p>
-          <span class="sport__tag" data-en="Grappling · Ground" data-ar="مصارعة · أرضي">Grappling · Ground</span>
-        </article>
-
-        <article class="sport reveal" tabindex="0">
-          <span class="sport__index">02</span>
-          <h3 class="sport__name" data-en="Muay Thai" data-ar="المواي تاي">Muay Thai</h3>
-          <p class="sport__desc" data-en="The art of eight limbs — fists, elbows, knees and shins as one weapon." data-ar="فن الأطراف الثمانية — قبضات وأكواع وركب وسيقان بسلاح واحد.">The art of eight limbs — fists, elbows, knees and shins as one weapon.</p>
-          <span class="sport__tag" data-en="Fists · Elbows · Knees · Shins" data-ar="قبضات · أكواع · ركب · سيقان">Fists · Elbows · Knees · Shins</span>
-        </article>
-
-        <article class="sport reveal" tabindex="0">
-          <span class="sport__index">03</span>
-          <h3 class="sport__name" data-en="Kickboxing" data-ar="الكيك بوكسينج">Kickboxing</h3>
-          <p class="sport__desc" data-en="Explosive punches and kicks — speed, cardio and knockout power." data-ar="لكمات وركلات متفجرة — سرعة ولياقة وقوة قاضية.">Explosive punches and kicks — speed, cardio and knockout power.</p>
-          <span class="sport__tag" data-en="Punches · Kicks" data-ar="لكمات · ركلات">Punches · Kicks</span>
-        </article>
-
-        <article class="sport reveal" tabindex="0">
-          <span class="sport__index">04</span>
-          <h3 class="sport__name" data-en="Boxing" data-ar="الملاكمة">Boxing</h3>
-          <p class="sport__desc" data-en="The sweet science — footwork, timing and hands that hit different." data-ar="العلم العذب — حركة قدمين وتوقيت ولكمات تصنع الفرق.">The sweet science — footwork, timing and hands that hit different.</p>
-          <span class="sport__tag" data-en="Hands · Footwork" data-ar="أيدٍ · حركة قدمين">Hands · Footwork</span>
-        </article>
-
-        <article class="sport reveal" tabindex="0">
-          <span class="sport__index">05</span>
-          <h3 class="sport__name" data-en="Fitness" data-ar="اللياقة">Fitness</h3>
-          <p class="sport__desc" data-en="Fighter-grade strength and conditioning — for every athlete." data-ar="قوة ولياقة بمستوى المقاتلين — لكل رياضي.">Fighter-grade strength and conditioning — for every athlete.</p>
-          <span class="sport__tag" data-en="Strength · Conditioning" data-ar="قوة · لياقة">Strength · Conditioning</span>
-        </article>
-
-        <article class="sport reveal" tabindex="0">
-          <span class="sport__index">06</span>
-          <h3 class="sport__name" data-en="Oriental Dance & Zumba" data-ar="الرقص الشرقي والزومبا">Oriental Dance & Zumba</h3>
-          <p class="sport__desc" data-en="High-energy rhythm workouts — burn calories to the beat." data-ar="تمارين إيقاعية عالية الطاقة — احرق السعرات على الأنغام.">High-energy rhythm workouts — burn calories to the beat.</p>
-          <span class="sport__tag" data-en="Cardio · Rhythm" data-ar="كارديو · إيقاع">Cardio · Rhythm</span>
-        </article>
-
-        <article class="sport reveal" tabindex="0">
-          <span class="sport__index">07</span>
-          <h3 class="sport__name" data-en="Gymnastics" data-ar="الجمباز">Gymnastics</h3>
-          <p class="sport__desc" data-en="Strength, flexibility and total body control — for kids and adults." data-ar="قوة ومرونة وتحكم كامل بالجسم — للأطفال والكبار.">Strength, flexibility and total body control — for kids and adults.</p>
-          <span class="sport__tag" data-en="Strength · Flexibility" data-ar="قوة · مرونة">Strength · Flexibility</span>
-        </article>
-
-        <article class="sport reveal" tabindex="0">
-          <span class="sport__index">08</span>
-          <h3 class="sport__name" data-en="Taekwondo" data-ar="التايكواندو">Taekwondo</h3>
-          <p class="sport__desc" data-en="Fast, high kicks and discipline — confidence for kids and adults." data-ar="ركلات عالية سريعة وانضباط — ثقة للأطفال والكبار.">Fast, high kicks and discipline — confidence for kids and adults.</p>
-          <span class="sport__tag" data-en="Kicks · Discipline" data-ar="ركلات · انضباط">Kicks · Discipline</span>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- ====== Classes / Kids Schedule ====== -->
-    <section class="classes section" id="classes">
-      <div class="section__head">
-        <span class="section__kicker" data-en="Programs" data-ar="البرامج">Programs</span>
-        <h2 class="section__title reveal" data-en="Weekly Schedule" data-ar="جدول الأسبوع">Weekly Schedule</h2>
-        <p class="schedule__note reveal" data-en="Open 6 days · Saturday to Thursday (closed Friday)" data-ar="مفتوح 6 أيام · من السبت إلى الخميس (مغلق الجمعة)">Open 6 days · Saturday to Thursday (closed Friday)</p>
-      </div>
-
-      <div class="sched-table reveal">
-        <!-- header row -->
-        <div class="sched-table__head">
-          <span data-en="Group" data-ar="الفئة">Group</span>
-          <span data-en="Days" data-ar="الأيام">Days</span>
-          <span data-en="Time" data-ar="الوقت">Time</span>
+    <!-- ====== Training Programs ====== -->
+    <section class="section programs" id="programs">
+      <div class="container">
+        <div class="section__head section__head--split">
+          <div>
+            <span class="kicker" data-en="Training Programs" data-ar="البرامج التدريبية">Training Programs</span>
+            <h2 class="section__title reveal" data-en="Nine disciplines. One roof." data-ar="تسع رياضات. سقف واحد.">Nine disciplines. One roof.</h2>
+          </div>
+          <p class="section__lead reveal" data-en="From your first class to your first fight — every program is led by certified coaches, for kids and adults." data-ar="من أول حصة إلى أول نزال — كل برنامج يقوده مدربون معتمدون، للأطفال والكبار.">From your first class to your first fight — every program is led by certified coaches, for kids and adults.</p>
         </div>
 
-        <!-- Kids -->
-        <div class="sched-table__band" data-en="Kids" data-ar="الأطفال">Kids</div>
-        <div class="sched-table__row">
-          <span class="sched-table__group-cell" data-en="Ages 5 – 9" data-ar="العمر 5 – 9 سنوات">Ages 5 – 9</span>
-          <span class="sched-table__days" data-en="Sat – Thu" data-ar="من السبت إلى الخميس">Sat – Thu</span>
-          <span class="sched-table__time" data-en="4:00 – 5:00 PM" data-ar="4:00 – 5:00 مساءً">4:00 – 5:00 PM</span>
-        </div>
-        <div class="sched-table__row">
-          <span class="sched-table__group-cell" data-en="Ages 10 – 15" data-ar="العمر 10 – 15 سنة">Ages 10 – 15</span>
-          <span class="sched-table__days" data-en="Sat – Thu" data-ar="من السبت إلى الخميس">Sat – Thu</span>
-          <span class="sched-table__time" data-en="4:00 – 5:00 PM" data-ar="4:00 – 5:00 مساءً">4:00 – 5:00 PM</span>
-        </div>
-        <div class="sched-table__row">
-          <span class="sched-table__group-cell" data-en="Ages 15 – 18" data-ar="العمر 15 – 18 سنة">Ages 15 – 18</span>
-          <span class="sched-table__days" data-en="Sat – Thu" data-ar="من السبت إلى الخميس">Sat – Thu</span>
-          <span class="sched-table__time" data-en="5:00 – 6:00 PM" data-ar="5:00 – 6:00 مساءً">5:00 – 6:00 PM</span>
-        </div>
+        <div class="programs__layout">
+          <aside class="programs__aside reveal">
+            <div class="photo-card">
+              <picture>
+                <source srcset="images/gallery/bags.webp" type="image/webp">
+                <img src="images/gallery/bags.jpg" alt="MOB branded heavy bags on the training floor" loading="lazy">
+              </picture>
+              <span class="photo-card__cap" data-en="Umm Salal Ali · Striking floor" data-ar="أم صلال علي · صالة الضرب">Umm Salal Ali · Striking floor</span>
+            </div>
+            <a href="#contact" class="btn btn--outline"><span data-en="Not sure where to start? Book a free trial" data-ar="مو متأكد من وين تبدأ؟ احجز حصة مجانية">Not sure where to start? Book a free trial</span></a>
+          </aside>
 
-        <!-- Adults -->
-        <div class="sched-table__band" data-en="Adults" data-ar="البالغون">Adults</div>
-        <div class="sched-table__row">
-          <span class="sched-table__group-cell" data-en="Adults" data-ar="البالغون">Adults</span>
-          <span class="sched-table__days" data-en="Sat – Thu" data-ar="من السبت إلى الخميس">Sat – Thu</span>
-          <span class="sched-table__time" data-en="3:00 – 4:00 PM" data-ar="3:00 – 4:00 عصراً">3:00 – 4:00 PM</span>
-        </div>
-        <div class="sched-table__row">
-          <span class="sched-table__group-cell" data-en="Adults" data-ar="البالغون">Adults</span>
-          <span class="sched-table__days" data-en="Sat – Thu" data-ar="من السبت إلى الخميس">Sat – Thu</span>
-          <span class="sched-table__time" data-en="6:00 – 9:00 PM" data-ar="6:00 – 9:00 مساءً">6:00 – 9:00 PM</span>
+          <ol class="programs__list" data-stagger>
+            <li><a class="program reveal" href="#contact">
+              <span class="program__num">01</span>
+              <span class="program__body"><h3 class="program__name" data-en="Boxing" data-ar="الملاكمة">Boxing</h3><span class="program__desc" data-en="The sweet science — footwork, timing and hands that hit different." data-ar="العلم العذب — حركة قدمين وتوقيت ولكمات تصنع الفرق.">The sweet science — footwork, timing and hands that hit different.</span></span>
+              <span class="program__tag" data-en="Hands · Footwork" data-ar="أيدٍ · حركة قدمين">Hands · Footwork</span>
+              <span class="program__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            </a></li>
+            <li><a class="program reveal" href="#contact">
+              <span class="program__num">02</span>
+              <span class="program__body"><h3 class="program__name" data-en="Muay Thai" data-ar="المواي تاي">Muay Thai</h3><span class="program__desc" data-en="The art of eight limbs — fists, elbows, knees and shins as one weapon." data-ar="فن الأطراف الثمانية — قبضات وأكواع وركب وسيقان بسلاح واحد.">The art of eight limbs — fists, elbows, knees and shins as one weapon.</span></span>
+              <span class="program__tag" data-en="Fists · Elbows · Knees · Shins" data-ar="قبضات · أكواع · ركب · سيقان">Fists · Elbows · Knees · Shins</span>
+              <span class="program__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            </a></li>
+            <li><a class="program reveal" href="#contact">
+              <span class="program__num">03</span>
+              <span class="program__body"><h3 class="program__name" data-en="Kickboxing" data-ar="الكيك بوكسينج">Kickboxing</h3><span class="program__desc" data-en="Explosive punches and kicks — speed, cardio and knockout power." data-ar="لكمات وركلات متفجرة — سرعة ولياقة وقوة قاضية.">Explosive punches and kicks — speed, cardio and knockout power.</span></span>
+              <span class="program__tag" data-en="Punches · Kicks" data-ar="لكمات · ركلات">Punches · Kicks</span>
+              <span class="program__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            </a></li>
+            <li><a class="program reveal" href="#contact">
+              <span class="program__num">04</span>
+              <span class="program__body"><h3 class="program__name" data-en="Brazilian Jiu-Jitsu" data-ar="الجيوجيتسو">Brazilian Jiu-Jitsu</h3><span class="program__desc" data-en="The gentle art — technique beats size through control and submissions." data-ar="الفن اللطيف — التقنية تتغلب على القوة بالسيطرة والإخضاع.">The gentle art — technique beats size through control and submissions.</span></span>
+              <span class="program__tag" data-en="Grappling · Ground" data-ar="مصارعة · أرضي">Grappling · Ground</span>
+              <span class="program__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            </a></li>
+            <li><a class="program reveal" href="#contact">
+              <span class="program__num">05</span>
+              <span class="program__body"><h3 class="program__name" data-en="Taekwondo" data-ar="التايكواندو">Taekwondo</h3><span class="program__desc" data-en="Fast, high kicks and discipline — confidence for kids and adults." data-ar="ركلات عالية سريعة وانضباط — ثقة للأطفال والكبار.">Fast, high kicks and discipline — confidence for kids and adults.</span></span>
+              <span class="program__tag" data-en="Kicks · Discipline" data-ar="ركلات · انضباط">Kicks · Discipline</span>
+              <span class="program__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            </a></li>
+            <li><a class="program reveal" href="#contact">
+              <span class="program__num">06</span>
+              <span class="program__body"><h3 class="program__name" data-en="Karate" data-ar="الكاراتيه">Karate</h3><span class="program__desc" data-en="Precise striking, discipline and focus — for kids and adults." data-ar="ضربات دقيقة وانضباط وتركيز — للأطفال والكبار.">Precise striking, discipline and focus — for kids and adults.</span></span>
+              <span class="program__tag" data-en="Strikes · Discipline" data-ar="ضربات · انضباط">Strikes · Discipline</span>
+              <span class="program__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            </a></li>
+            <li><a class="program reveal" href="#contact">
+              <span class="program__num">07</span>
+              <span class="program__body"><h3 class="program__name" data-en="Fitness" data-ar="اللياقة">Fitness</h3><span class="program__desc" data-en="Fighter-grade strength and conditioning — for every athlete." data-ar="قوة ولياقة بمستوى المقاتلين — لكل رياضي.">Fighter-grade strength and conditioning — for every athlete.</span></span>
+              <span class="program__tag" data-en="Strength · Conditioning" data-ar="قوة · لياقة">Strength · Conditioning</span>
+              <span class="program__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            </a></li>
+            <li><a class="program reveal" href="#contact">
+              <span class="program__num">08</span>
+              <span class="program__body"><h3 class="program__name" data-en="Gymnastics" data-ar="الجمباز">Gymnastics</h3><span class="program__desc" data-en="Strength, flexibility and total body control — for kids and adults." data-ar="قوة ومرونة وتحكم كامل بالجسم — للأطفال والكبار.">Strength, flexibility and total body control — for kids and adults.</span></span>
+              <span class="program__tag" data-en="Strength · Flexibility" data-ar="قوة · مرونة">Strength · Flexibility</span>
+              <span class="program__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            </a></li>
+            <li><a class="program reveal" href="#contact">
+              <span class="program__num">09</span>
+              <span class="program__body"><h3 class="program__name" data-en="Oriental Dance &amp; Zumba" data-ar="الرقص الشرقي والزومبا">Oriental Dance &amp; Zumba</h3><span class="program__desc" data-en="High-energy rhythm workouts — burn calories to the beat." data-ar="تمارين إيقاعية عالية الطاقة — احرق السعرات على الأنغام.">High-energy rhythm workouts — burn calories to the beat.</span></span>
+              <span class="program__tag" data-en="Cardio · Rhythm" data-ar="كارديو · إيقاع">Cardio · Rhythm</span>
+              <span class="program__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            </a></li>
+          </ol>
         </div>
       </div>
     </section>
 
-    <!-- ====== Pricing ====== -->
-    <section class="pricing section" id="pricing">
-      <div class="section__head">
-        <span class="section__kicker" data-en="Membership" data-ar="العضويات">Membership</span>
-        <h2 class="section__title reveal" data-en="Plans & Pricing" data-ar="الباقات والأسعار">Plans & Pricing</h2>
-      </div>
+    <!-- ====== Why The Mob ====== -->
+    <section class="section why" id="why">
+      <div class="container">
+        <div class="section__head section__head--split">
+          <div>
+            <span class="kicker" data-en="Why The Mob" data-ar="ليش ذا موب">Why The Mob</span>
+            <h2 class="section__title reveal" data-en="Built for fighters. Open to everyone." data-ar="مبني للمقاتلين. مفتوح للجميع.">Built for fighters. Open to everyone.</h2>
+          </div>
+          <p class="section__lead reveal" data-en="A full-contact combat sports academy with two branches in Qatar — competition-grade facilities, certified coaches and programs for every age and level." data-ar="أكاديمية متكاملة للرياضات القتالية بفرعين في قطر — مرافق بمواصفات المنافسات ومدربون معتمدون وبرامج لكل عمر ومستوى.">A full-contact combat sports academy with two branches in Qatar — competition-grade facilities, certified coaches and programs for every age and level.</p>
+        </div>
 
-      <!-- Memberships -->
-      <h3 class="pricing__group reveal" data-en="Memberships" data-ar="الاشتراكات">Memberships</h3>
-      <div class="pricing__grid">
-        <div class="price-card reveal">
-          <h3 data-en="1 Month" data-ar="شهر">1 Month</h3>
-          <ul class="price-card__list">
-            <li><span data-en="3 days / week" data-ar="3 أيام بالأسبوع">3 days / week</span><b>550</b></li>
-            <li><span data-en="6 days / week" data-ar="6 أيام بالأسبوع">6 days / week</span><b>750</b></li>
-          </ul>
+        <div class="stats" data-stagger>
+          <div class="stat reveal"><span class="stat__val"><span data-count="9">9</span></span><span class="stat__label" data-en="Disciplines" data-ar="رياضات">Disciplines</span></div>
+          <div class="stat reveal"><span class="stat__val"><span data-count="500" data-grow-base="500" data-grow-start="2026-07-03" data-grow-step="3" data-grow-every="2">500</span><span class="stat__plus">+</span></span><span class="stat__label" data-en="Members" data-ar="متدرب">Members</span></div>
+          <div class="stat reveal"><span class="stat__val"><span data-count="6">6</span></span><span class="stat__label" data-en="Days a week" data-ar="أيام بالأسبوع">Days a week</span></div>
+          <div class="stat reveal"><span class="stat__val"><span data-count="2">2</span></span><span class="stat__label" data-en="Branches" data-ar="فروع">Branches</span></div>
         </div>
-        <div class="price-card reveal">
-          <h3 data-en="3 Months" data-ar="3 أشهر">3 Months</h3>
-          <ul class="price-card__list">
-            <li><span data-en="3 days / week" data-ar="3 أيام بالأسبوع">3 days / week</span><b>1300</b></li>
-            <li><span data-en="6 days / week" data-ar="6 أيام بالأسبوع">6 days / week</span><b>1700</b></li>
-          </ul>
-        </div>
-        <div class="price-card reveal">
-          <h3 data-en="6 Months" data-ar="6 أشهر">6 Months</h3>
-          <ul class="price-card__list">
-            <li><span data-en="3 days / week" data-ar="3 أيام بالأسبوع">3 days / week</span><b>2200</b></li>
-            <li><span data-en="6 days / week" data-ar="6 أيام بالأسبوع">6 days / week</span><b>3000</b></li>
-          </ul>
-        </div>
-        <div class="price-card price-card--featured reveal">
-          <span class="price-card__badge" data-en="Best Value" data-ar="الأفضل قيمة">Best Value</span>
-          <h3 data-en="1 Year" data-ar="سنة">1 Year</h3>
-          <p class="price-card__amount">5200 <small data-en="QAR" data-ar="ر.ق">QAR</small></p>
-          <p class="price-card__note" data-en="Full year · all access" data-ar="سنة كاملة · وصول كامل">Full year · all access</p>
-        </div>
-      </div>
 
-      <!-- Private classes (merged) -->
-      <h3 class="pricing__group reveal" data-en="Private Class — Monthly" data-ar="برايفت كلاس — شهري">Private Class — Monthly</h3>
-      <div class="price-table reveal">
-        <div class="price-table__head">
-          <span data-en="Sessions per Week" data-ar="الحصص بالأسبوع">Sessions per Week</span>
-          <span data-en="Sessions" data-ar="الحصص">Sessions</span>
-          <span data-en="1 Person" data-ar="شخص واحد">1 Person</span>
-          <span data-en="2 People" data-ar="شخصين">2 People</span>
-        </div>
-        <div class="price-table__row">
-          <span class="price-table__plan" data-en="2 Sessions per Week" data-ar="حصتان بالأسبوع">2 Sessions per Week</span>
-          <span class="price-table__sessions" data-en="8 sessions" data-ar="8 حصص">8 sessions</span>
-          <span class="price-table__price">2000 <small data-en="QAR" data-ar="ر.ق">QAR</small></span>
-          <span class="price-table__price">2200 <small data-en="QAR" data-ar="ر.ق">QAR</small></span>
-        </div>
-        <div class="price-table__row">
-          <span class="price-table__plan" data-en="3 Sessions per Week" data-ar="3 حصص بالأسبوع">3 Sessions per Week</span>
-          <span class="price-table__sessions" data-en="12 sessions" data-ar="12 حصة">12 sessions</span>
-          <span class="price-table__price">3000 <small data-en="QAR" data-ar="ر.ق">QAR</small></span>
-          <span class="price-table__price">3500 <small data-en="QAR" data-ar="ر.ق">QAR</small></span>
-        </div>
-        <div class="price-table__row">
-          <span class="price-table__plan" data-en="6 Sessions per Week" data-ar="6 حصص بالأسبوع">6 Sessions per Week</span>
-          <span class="price-table__sessions" data-en="24 sessions" data-ar="24 حصة">24 sessions</span>
-          <span class="price-table__price">4500 <small data-en="QAR" data-ar="ر.ق">QAR</small></span>
-          <span class="price-table__price">5000 <small data-en="QAR" data-ar="ر.ق">QAR</small></span>
+        <div class="why__grid" data-stagger>
+          <div class="tile reveal"><span class="tile__idx">01</span><h3 data-en="Pro Cage" data-ar="قفص احترافي">Pro Cage</h3><p data-en="Competition-grade octagon for live sparring." data-ar="حلبة ثُمانية بمواصفات المنافسات للسبارينغ.">Competition-grade octagon for live sparring.</p></div>
+          <div class="tile reveal"><span class="tile__idx">02</span><h3 data-en="Certified Coaches" data-ar="مدربون معتمدون">Certified Coaches</h3><p data-en="Experienced fighters and licensed instructors." data-ar="مقاتلون ذوو خبرة ومدربون مرخّصون.">Experienced fighters and licensed instructors.</p></div>
+          <div class="tile reveal"><span class="tile__idx">03</span><h3 data-en="Full Gear" data-ar="معدات كاملة">Full Gear</h3><p data-en="Bags, gloves, gis and pads — MOB branded." data-ar="أكياس وقفازات وبدلات وواقيات — بعلامة MOB.">Bags, gloves, gis and pads — MOB branded.</p></div>
+          <div class="tile reveal"><span class="tile__idx">04</span><h3 data-en="Self Defense" data-ar="دفاع عن النفس">Self Defense</h3><p data-en="Practical self-defense skills for every age." data-ar="مهارات دفاع عن النفس عملية لكل الأعمار.">Practical self-defense skills for every age.</p></div>
+          <div class="tile reveal"><span class="tile__idx">05</span><h3 data-en="Kids &amp; Adults" data-ar="أطفال وكبار">Kids &amp; Adults</h3><p data-en="Age-appropriate programs for every level." data-ar="برامج مناسبة لكل عمر ومستوى.">Age-appropriate programs for every level.</p></div>
+          <div class="tile reveal"><span class="tile__idx">06</span><h3 data-en="Summer Camp" data-ar="مخيمات صيفية">Summer Camp</h3><p data-en="Intensive summer training program for kids and teens." data-ar="برنامج تدريبي مكثّف خلال الصيف للأطفال والمراهقين.">Intensive summer training program for kids and teens.</p></div>
         </div>
       </div>
     </section>
 
-    <!-- ====== Coaches (placeholder) ====== -->
-    <section class="coaches section" id="coaches">
-      <div class="section__head">
-        <span class="section__kicker" data-en="The Team" data-ar="الفريق">The Team</span>
-        <h2 class="section__title reveal" data-en="Our Team" data-ar="طاقم العمل">Our Team</h2>
+    <!-- ====== Who we train ====== -->
+    <section class="section who" id="who">
+      <div class="container">
+        <div class="section__head">
+          <span class="kicker" data-en="Who We Train" data-ar="لمن نُدرّب">Who We Train</span>
+          <h2 class="section__title reveal" data-en="Adults. Kids. Women." data-ar="كبار. أطفال. نساء.">Adults. Kids. Women.</h2>
+        </div>
+        <div class="who__grid" data-stagger>
+          <article class="who-card reveal">
+            <picture><source srcset="images/gallery/gear.webp" type="image/webp"><img src="images/gallery/gear.jpg" alt="" loading="lazy"></picture>
+            <div class="who-card__body">
+              <span class="who-card__kicker" data-en="Ages 18+" data-ar="18 سنة فأكثر">Ages 18+</span>
+              <h3 data-en="Adults" data-ar="الكبار">Adults</h3>
+              <p data-en="Boxing, Muay Thai, Kickboxing, BJJ and fitness — from your first class to fight camp. Sessions 3–4 PM and 6–9 PM." data-ar="ملاكمة ومواي تاي وكيك بوكسينج وجيوجيتسو ولياقة — من أول حصة إلى معسكر النزال. الحصص 3–4 عصراً و6–9 مساءً.">Boxing, Muay Thai, Kickboxing, BJJ and fitness — from your first class to fight camp. Sessions 3–4 PM and 6–9 PM.</p>
+              <a class="who-card__link" href="#schedule"><span data-en="Adult schedule" data-ar="جدول الكبار">Adult schedule</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
+          <article class="who-card reveal">
+            <picture><source srcset="images/gallery/mats.webp" type="image/webp"><img src="images/gallery/mats.jpg" alt="" loading="lazy"></picture>
+            <div class="who-card__body">
+              <span class="who-card__kicker" data-en="Ages 5 – 18" data-ar="من 5 إلى 18 سنة">Ages 5 – 18</span>
+              <h3 data-en="Kids" data-ar="الأطفال">Kids</h3>
+              <p data-en="Taekwondo, Karate, Gymnastics, BJJ and more — age-grouped classes every day 4–6 PM, plus summer camps." data-ar="تايكواندو وكاراتيه وجمباز وجيوجيتسو وأكثر — حصص حسب الفئة العمرية يومياً من 4 إلى 6 مساءً، ومخيمات صيفية.">Taekwondo, Karate, Gymnastics, BJJ and more — age-grouped classes every day 4–6 PM, plus summer camps.</p>
+              <a class="who-card__link" href="#schedule"><span data-en="Kids schedule" data-ar="جدول الأطفال">Kids schedule</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
+          <article class="who-card reveal">
+            <picture><source srcset="images/gallery/inside.webp" type="image/webp"><img src="images/gallery/inside.jpg" alt="" loading="lazy"></picture>
+            <div class="who-card__body">
+              <span class="who-card__kicker" data-en="All levels" data-ar="كل المستويات">All levels</span>
+              <h3 data-en="Women" data-ar="النساء">Women</h3>
+              <p data-en="Fitness, Oriental Dance &amp; Zumba, self-defense and combat classes for women — beginner-friendly and coach-led." data-ar="لياقة ورقص شرقي وزومبا ودفاع عن النفس وحصص قتالية للنساء — مناسبة للمبتدئات وبإشراف مدربين.">Fitness, Oriental Dance &amp; Zumba, self-defense and combat classes for women — beginner-friendly and coach-led.</p>
+              <a class="who-card__link" href="#contact"><span data-en="Book a free session" data-ar="احجزي حصة مجانية">Book a free session</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
+        </div>
       </div>
-      <div class="coaches__feature">
-        <img src="images/logo-mark-white.png" alt="" class="coaches__mark">
-        <div class="coaches__team">
+    </section>
+
+    <!-- ====== Coaches ====== -->
+    <section class="section coaches" id="coaches">
+      <div class="container">
+        <div class="section__head section__head--split">
+          <div>
+            <span class="kicker" data-en="The Team" data-ar="الفريق">The Team</span>
+            <h2 class="section__title reveal" data-en="Learn from fighters." data-ar="تعلّم من مقاتلين.">Learn from fighters.</h2>
+          </div>
+          <p class="section__lead reveal" data-en="Every discipline is led by experienced fighters and certified instructors." data-ar="كل رياضة يقودها مقاتلون ذوو خبرة ومدربون معتمدون.">Every discipline is led by experienced fighters and certified instructors.</p>
+        </div>
+
+        <div class="coaches__row" data-stagger>
           <figure class="coach reveal">
-            <div class="coach__photo"><img src="images/coaches/coach-1.jpg" alt="Coach Muath" loading="lazy" onerror="this.style.display='none'"></div>
-            <figcaption class="coach__name" data-en="Coach Muath" data-ar="كوتش معاذ">Coach Muath</figcaption>
-            <span class="coach__sport" data-en="Taekwondo" data-ar="تايكواندو">Taekwondo</span>
+            <div class="coach__photo"><img src="images/coaches/coach-1.jpg" alt="Coach Muath" loading="lazy" width="960" height="1200"></div>
+            <figcaption><span class="coach__sport" data-en="Taekwondo" data-ar="تايكواندو">Taekwondo</span><h3 class="coach__name" data-en="Coach Muath" data-ar="كوتش معاذ">Coach Muath</h3></figcaption>
           </figure>
           <figure class="coach reveal">
-            <div class="coach__photo"><img src="images/coaches/coach-2.jpg" alt="Coach Abdul Raouf" loading="lazy" onerror="this.style.display='none'"></div>
-            <figcaption class="coach__name" data-en="Coach Abdul Raouf" data-ar="كوتش عبد الرؤوف">Coach Abdul Raouf</figcaption>
-            <span class="coach__sport" data-en="Kickboxing" data-ar="كيك بوكسينج">Kickboxing</span>
+            <div class="coach__photo"><img src="images/coaches/coach-2.jpg" alt="Coach Abdul Raouf" loading="lazy" width="960" height="1200"></div>
+            <figcaption><span class="coach__sport" data-en="Kickboxing" data-ar="كيك بوكسينج">Kickboxing</span><h3 class="coach__name" data-en="Coach Abdul Raouf" data-ar="كوتش عبد الرؤوف">Coach Abdul Raouf</h3></figcaption>
           </figure>
           <figure class="coach reveal">
-            <div class="coach__photo"><img src="images/coaches/coach-3.jpg" alt="Coach Nasser" loading="lazy" onerror="this.style.display='none'"></div>
-            <figcaption class="coach__name" data-en="Coach Nasser" data-ar="كوتش ناصر">Coach Nasser</figcaption>
-            <span class="coach__sport" data-en="Kickboxing" data-ar="كيك بوكسينج">Kickboxing</span>
+            <div class="coach__photo"><img src="images/coaches/coach-3.jpg" alt="Coach Nasser" loading="lazy" width="960" height="1200"></div>
+            <figcaption><span class="coach__sport" data-en="Kickboxing" data-ar="كيك بوكسينج">Kickboxing</span><h3 class="coach__name" data-en="Coach Nasser" data-ar="كوتش ناصر">Coach Nasser</h3></figcaption>
+          </figure>
+          <figure class="coach reveal">
+            <div class="coach__photo"><img src="images/coaches/coach-4.jpg" alt="Coach Bilal" loading="lazy" width="960" height="1200"></div>
+            <figcaption><span class="coach__sport" data-en="Brazilian Jiu-Jitsu" data-ar="جيوجيتسو">Brazilian Jiu-Jitsu</span><h3 class="coach__name" data-en="Coach Bilal" data-ar="كوتش بلال">Coach Bilal</h3></figcaption>
+          </figure>
+          <figure class="coach reveal">
+            <div class="coach__photo"><img src="images/coaches/coach-5.jpg" alt="Coach Mohammed Shaaban" loading="lazy" width="720" height="900"></div>
+            <figcaption><span class="coach__sport" data-en="Karate" data-ar="كاراتيه">Karate</span><h3 class="coach__name" data-en="Coach Mohammed Shaaban" data-ar="كوتش محمد شعبان">Coach Mohammed Shaaban</h3></figcaption>
           </figure>
         </div>
+        <p class="coaches__hint" data-en="Swipe to see all coaches →" data-ar="← اسحب لعرض كل المدربين">Swipe to see all coaches →</p>
+      </div>
+    </section>
+
+    <!-- ====== Schedule ====== -->
+    <section class="section schedule" id="schedule">
+      <div class="container">
+        <div class="section__head section__head--split">
+          <div>
+            <span class="kicker" data-en="Schedule" data-ar="الجدول">Schedule</span>
+            <h2 class="section__title reveal" data-en="Weekly Schedule" data-ar="الجدول الأسبوعي">Weekly Schedule</h2>
+          </div>
+          <p class="section__lead reveal" data-en="Open 6 days · Saturday to Thursday · Closed Friday. Same schedule at both branches." data-ar="مفتوح 6 أيام · من السبت إلى الخميس · مغلق الجمعة. نفس الجدول في الفرعين.">Open 6 days · Saturday to Thursday · Closed Friday. Same schedule at both branches.</p>
+        </div>
+
+        <div class="sched__grid" data-stagger>
+          <div class="sched reveal">
+            <h3 class="sched__title"><span data-en="Kids" data-ar="الأطفال">Kids</span><small data-en="Ages 5 – 18" data-ar="من 5 إلى 18 سنة">Ages 5 – 18</small></h3>
+            <div class="sched__row"><span class="sched__label" data-en="Ages 5 – 9" data-ar="العمر 5 – 9 سنوات">Ages 5 – 9</span><span class="sched__days" data-en="Sat – Thu" data-ar="من السبت إلى الخميس">Sat – Thu</span><span class="sched__time" data-en="4:00 – 5:00 PM" data-ar="4:00 – 5:00 مساءً">4:00 – 5:00 PM</span></div>
+            <div class="sched__row"><span class="sched__label" data-en="Ages 10 – 15" data-ar="العمر 10 – 15 سنة">Ages 10 – 15</span><span class="sched__days" data-en="Sat – Thu" data-ar="من السبت إلى الخميس">Sat – Thu</span><span class="sched__time" data-en="4:00 – 5:00 PM" data-ar="4:00 – 5:00 مساءً">4:00 – 5:00 PM</span></div>
+            <div class="sched__row"><span class="sched__label" data-en="Ages 15 – 18" data-ar="العمر 15 – 18 سنة">Ages 15 – 18</span><span class="sched__days" data-en="Sat – Thu" data-ar="من السبت إلى الخميس">Sat – Thu</span><span class="sched__time" data-en="5:00 – 6:00 PM" data-ar="5:00 – 6:00 مساءً">5:00 – 6:00 PM</span></div>
+          </div>
+          <div class="sched reveal">
+            <h3 class="sched__title"><span data-en="Adults" data-ar="البالغون">Adults</span><small data-en="Ages 18+" data-ar="18 سنة فأكثر">Ages 18+</small></h3>
+            <div class="sched__row"><span class="sched__label" data-en="Afternoon session" data-ar="فترة العصر">Afternoon session</span><span class="sched__days" data-en="Sat – Thu" data-ar="من السبت إلى الخميس">Sat – Thu</span><span class="sched__time" data-en="3:00 – 4:00 PM" data-ar="3:00 – 4:00 عصراً">3:00 – 4:00 PM</span></div>
+            <div class="sched__row"><span class="sched__label" data-en="Evening session" data-ar="فترة المساء">Evening session</span><span class="sched__days" data-en="Sat – Thu" data-ar="من السبت إلى الخميس">Sat – Thu</span><span class="sched__time" data-en="6:00 – 9:00 PM" data-ar="6:00 – 9:00 مساءً">6:00 – 9:00 PM</span></div>
+          </div>
+        </div>
+
+        <div class="sched__foot reveal">
+          <p data-en="Private training is available any day — see pricing below." data-ar="التدريب الخاص متاح في أي يوم — شاهد الأسعار بالأسفل.">Private training is available any day — see pricing below.</p>
+          <a href="#contact" class="btn btn--gold"><span data-en="Book a Free Trial" data-ar="احجز حصة مجانية">Book a Free Trial</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Membership / Pricing ====== -->
+    <section class="section pricing" id="pricing">
+      <div class="container">
+        <div class="section__head section__head--split">
+          <div>
+            <span class="kicker" data-en="Membership" data-ar="العضويات">Membership</span>
+            <h2 class="section__title reveal" data-en="Plans &amp; Pricing" data-ar="الباقات والأسعار">Plans &amp; Pricing</h2>
+          </div>
+          <p class="section__lead reveal" data-en="All prices in Qatari Riyal (QAR). Choose 3 or 6 training days per week." data-ar="جميع الأسعار بالريال القطري. اختر 3 أو 6 أيام تدريب بالأسبوع.">All prices in Qatari Riyal (QAR). Choose 3 or 6 training days per week.</p>
+        </div>
+
+        <div class="plans" data-stagger>
+          <article class="plan reveal">
+            <h3 class="plan__name" data-en="1 Month" data-ar="شهر">1 Month</h3>
+            <div class="plan__row"><span data-en="3 days / week" data-ar="3 أيام بالأسبوع">3 days / week</span><b>550 <small data-en="QAR" data-ar="ر.ق">QAR</small></b></div>
+            <div class="plan__row"><span data-en="6 days / week" data-ar="6 أيام بالأسبوع">6 days / week</span><b>750 <small data-en="QAR" data-ar="ر.ق">QAR</small></b></div>
+          </article>
+          <article class="plan reveal">
+            <h3 class="plan__name" data-en="3 Months" data-ar="3 أشهر">3 Months</h3>
+            <div class="plan__row"><span data-en="3 days / week" data-ar="3 أيام بالأسبوع">3 days / week</span><b>1300 <small data-en="QAR" data-ar="ر.ق">QAR</small></b></div>
+            <div class="plan__row"><span data-en="6 days / week" data-ar="6 أيام بالأسبوع">6 days / week</span><b>1700 <small data-en="QAR" data-ar="ر.ق">QAR</small></b></div>
+          </article>
+          <article class="plan reveal">
+            <h3 class="plan__name" data-en="6 Months" data-ar="6 أشهر">6 Months</h3>
+            <div class="plan__row"><span data-en="3 days / week" data-ar="3 أيام بالأسبوع">3 days / week</span><b>2200 <small data-en="QAR" data-ar="ر.ق">QAR</small></b></div>
+            <div class="plan__row"><span data-en="6 days / week" data-ar="6 أيام بالأسبوع">6 days / week</span><b>3000 <small data-en="QAR" data-ar="ر.ق">QAR</small></b></div>
+          </article>
+          <article class="plan plan--featured reveal">
+            <span class="plan__badge" data-en="Best value" data-ar="الأفضل قيمة">Best value</span>
+            <h3 class="plan__name" data-en="1 Year" data-ar="سنة">1 Year</h3>
+            <p class="plan__amount">5200 <small data-en="QAR" data-ar="ر.ق">QAR</small></p>
+            <p class="plan__note" data-en="Full year · all access" data-ar="سنة كاملة · وصول كامل">Full year · all access</p>
+            <a href="#contact" class="btn btn--gold"><span data-en="Get started" data-ar="ابدأ الآن">Get started</span></a>
+          </article>
+        </div>
+
+        <div class="private reveal">
+          <div class="private__head">
+            <h3 data-en="Private Training" data-ar="التدريب الخاص">Private Training</h3>
+            <p data-en="Monthly plans · 1-on-1 or bring a partner" data-ar="باقات شهرية · فردي أو مع شريك">Monthly plans · 1-on-1 or bring a partner</p>
+          </div>
+          <div class="table-wrap">
+            <table class="ptable">
+              <thead>
+                <tr>
+                  <th data-en="Per week" data-ar="بالأسبوع">Per week</th>
+                  <th data-en="Sessions / month" data-ar="حصص بالشهر">Sessions / month</th>
+                  <th data-en="1 person" data-ar="شخص واحد">1 person</th>
+                  <th data-en="2 people" data-ar="شخصين">2 people</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="ptable__plan" data-th-en="Per week" data-th-ar="بالأسبوع" data-en="2 sessions / week" data-ar="حصتان بالأسبوع">2 sessions / week</td>
+                  <td data-th-en="Sessions / month" data-th-ar="حصص بالشهر" data-en="8 sessions" data-ar="8 حصص">8 sessions</td>
+                  <td class="num" data-th-en="1 person" data-th-ar="شخص واحد">2000 <small data-en="QAR" data-ar="ر.ق">QAR</small></td>
+                  <td class="num" data-th-en="2 people" data-th-ar="شخصين">2200 <small data-en="QAR" data-ar="ر.ق">QAR</small></td>
+                </tr>
+                <tr>
+                  <td class="ptable__plan" data-th-en="Per week" data-th-ar="بالأسبوع" data-en="3 sessions / week" data-ar="3 حصص بالأسبوع">3 sessions / week</td>
+                  <td data-th-en="Sessions / month" data-th-ar="حصص بالشهر" data-en="12 sessions" data-ar="12 حصة">12 sessions</td>
+                  <td class="num" data-th-en="1 person" data-th-ar="شخص واحد">3000 <small data-en="QAR" data-ar="ر.ق">QAR</small></td>
+                  <td class="num" data-th-en="2 people" data-th-ar="شخصين">3500 <small data-en="QAR" data-ar="ر.ق">QAR</small></td>
+                </tr>
+                <tr>
+                  <td class="ptable__plan" data-th-en="Per week" data-th-ar="بالأسبوع" data-en="6 sessions / week" data-ar="6 حصص بالأسبوع">6 sessions / week</td>
+                  <td data-th-en="Sessions / month" data-th-ar="حصص بالشهر" data-en="24 sessions" data-ar="24 حصة">24 sessions</td>
+                  <td class="num" data-th-en="1 person" data-th-ar="شخص واحد">4500 <small data-en="QAR" data-ar="ر.ق">QAR</small></td>
+                  <td class="num" data-th-en="2 people" data-th-ar="شخصين">5000 <small data-en="QAR" data-ar="ر.ق">QAR</small></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <p class="pricing__cta reveal">
+          <a class="btn btn--outline" href="https://wa.me/97451218181" target="_blank" rel="noopener"><span data-en="Ask about memberships on WhatsApp" data-ar="اسأل عن الاشتراكات عبر واتساب">Ask about memberships on WhatsApp</span></a>
+        </p>
       </div>
     </section>
 
     <!-- ====== Gallery ====== -->
-    <section class="gallery section" id="gallery">
-      <div class="section__head">
-        <span class="section__kicker" data-en="Inside The Mob" data-ar="داخل النادي">Inside The Mob</span>
-        <h2 class="section__title reveal" data-en="The Facility" data-ar="المرافق">The Facility</h2>
-      </div>
-      <!-- Location tabs -->
-      <div class="gallery__tabs">
-        <button class="gallery__tab is-active" data-loc="all" data-en="All Locations" data-ar="كل المواقع">All Locations</button>
-        <button class="gallery__tab" data-loc="um-salal" data-en="Um Salal" data-ar="أم صلال">Um Salal</button>
-        <button class="gallery__tab" data-loc="mirqab" data-en="Mirqab Mall" data-ar="مرقاب مول">Mirqab Mall</button>
-      </div>
-
-      <div class="gallery__grid" id="galleryGrid">
-        <!-- Um Salal -->
-        <figure class="gallery__item gallery__item--lg reveal" data-loc="um-salal" data-label-en="The Cage" data-label-ar="القفص">
-          <picture><source srcset="images/gallery/cage.webp" type="image/webp">
-          <img src="images/gallery/cage.jpg" alt="The MOB Gym competition cage" loading="lazy" onerror="this.closest('picture').remove()"></picture>
-        </figure>
-        <figure class="gallery__item reveal" data-loc="um-salal" data-label-en="Heavy Bags" data-label-ar="أكياس الملاكمة">
-          <picture><source srcset="images/gallery/bags.webp" type="image/webp">
-          <img src="images/gallery/bags.jpg" alt="MOB branded heavy bags" loading="lazy" onerror="this.closest('picture').remove()"></picture>
-        </figure>
-        <figure class="gallery__item reveal" data-loc="um-salal" data-label-en="The Mats" data-label-ar="البساط">
-          <picture><source srcset="images/gallery/mats.webp" type="image/webp">
-          <img src="images/gallery/mats.jpg" alt="Training mats" loading="lazy" onerror="this.closest('picture').remove()"></picture>
-        </figure>
-        <figure class="gallery__item reveal" data-loc="um-salal" data-label-en="Apparel" data-label-ar="الملابس">
-          <picture><source srcset="images/gallery/gear.webp" type="image/webp">
-          <img src="images/gallery/gear.jpg" alt="MOB gear and uniforms" loading="lazy" onerror="this.closest('picture').remove()"></picture>
-        </figure>
-        <figure class="gallery__item reveal" data-loc="um-salal" data-label-en="Entrance" data-label-ar="المدخل">
-          <picture><source srcset="images/gallery/inside.webp" type="image/webp">
-          <img src="images/gallery/inside.jpg" alt="Inside The MOB Gym" loading="lazy" onerror="this.closest('picture').remove()"></picture>
-        </figure>
-        <figure class="gallery__item gallery__item--wide reveal" data-loc="um-salal" data-label-en="Gym" data-label-ar="الصالة">
-          <picture><source srcset="images/gallery/floor.webp" type="image/webp">
-          <img src="images/gallery/floor.jpg" alt="Main training floor" loading="lazy" onerror="this.closest('picture').remove()"></picture>
-        </figure>
-
-        <!-- Mirqab Mall — save photos as images/gallery/mirqab-1.jpg … mirqab-5.jpg -->
-        <figure class="gallery__item gallery__item--lg reveal" data-loc="mirqab" data-label-en="Entrance" data-label-ar="المدخل">
-          <img src="images/gallery/mirqab-1.jpg" alt="Mirqab Mall entrance corridor" loading="lazy" onerror="this.closest('figure').style.display='none'">
-        </figure>
-        <figure class="gallery__item reveal" data-loc="mirqab" data-label-en="Mats" data-label-ar="البساط">
-          <img src="images/gallery/mirqab-2.jpg" alt="MOB gear rack" loading="lazy" onerror="this.closest('figure').style.display='none'">
-        </figure>
-        <figure class="gallery__item reveal" data-loc="mirqab" data-label-en="Activity Hall" data-label-ar="قاعة النشاط">
-          <img src="images/gallery/mirqab-3.jpg" alt="Activity and gymnastics hall" loading="lazy" onerror="this.closest('figure').style.display='none'">
-        </figure>
-        <figure class="gallery__item reveal" data-loc="mirqab" data-label-en="Lounge" data-label-ar="الاستراحة">
-          <img src="images/gallery/mirqab-4.jpg" alt="Relax lounge area" loading="lazy" onerror="this.closest('figure').style.display='none'">
-        </figure>
-        <figure class="gallery__item reveal" data-loc="mirqab" data-label-en="Training Floor" data-label-ar="صالة التدريب">
-          <img src="images/gallery/mirqab-5.jpg" alt="Mirqab martial arts training floor" loading="lazy" onerror="this.closest('figure').remove()">
-        </figure>
-        <figure class="gallery__item gallery__item--wide reveal" data-loc="mirqab" data-label-en="The Mats" data-label-ar="البساط">
-          <img src="images/gallery/mirqab-6.jpg" alt="Mirqab training mats" loading="lazy" onerror="this.closest('figure').remove()">
-        </figure>
-      </div>
-    </section>
-
-    <!-- ====== Testimonials ====== -->
-    <section class="testi section" id="reviews">
-      <div class="section__head">
-        <span class="section__kicker" data-en="Reviews" data-ar="آراء الأعضاء">Reviews</span>
-        <h2 class="section__title reveal" data-en="What Members Say" data-ar="ماذا يقول أعضاؤنا">What Members Say</h2>
-      </div>
-
-      <div class="testi__summary reveal">
-        <span class="testi__score">5.0</span>
-        <span class="testi__stars" aria-hidden="true">★★★★★</span>
-        <span class="testi__source" data-en="Member reviews on Google" data-ar="من تقييمات الأعضاء على Google">Member reviews on Google</span>
-      </div>
-
-      <div class="testi__grid">
-        <figure class="testi-card reveal">
-          <span class="testi-card__stars" aria-hidden="true">★★★★★</span>
-          <blockquote class="testi-card__text" data-en="Best combat gym I've tried in Qatar. Pro coaches and a family vibe from day one." data-ar="أفضل نادي قتالي جرّبته في قطر. المدربين محترفين والأجواء عائلية من أول يوم.">Best combat gym I've tried in Qatar. Pro coaches and a family vibe from day one.</blockquote>
-          <figcaption class="testi-card__foot">
-            <span class="testi-card__avatar">M</span>
-            <span class="testi-card__meta">
-              <b class="testi-card__name" data-en="Mohammed A." data-ar="محمد. أ">Mohammed A.</b>
-              <span class="testi-card__tag" data-en="MMA Member" data-ar="عضو MMA">MMA Member</span>
-            </span>
-            <svg class="testi-card__g" viewBox="0 0 24 24" aria-label="Google review"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-          </figcaption>
-        </figure>
-
-        <figure class="testi-card reveal">
-          <span class="testi-card__stars" aria-hidden="true">★★★★★</span>
-          <blockquote class="testi-card__text" data-en="My son never misses a class — everyone noticed his progress in two months." data-ar="ولدي ما يرضى يفوّت حصة. تطوره في شهرين كان واضح للكل.">My son never misses a class — everyone noticed his progress in two months.</blockquote>
-          <figcaption class="testi-card__foot">
-            <span class="testi-card__avatar">F</span>
-            <span class="testi-card__meta">
-              <b class="testi-card__name" data-en="Umm Faisal" data-ar="أم فيصل">Umm Faisal</b>
-              <span class="testi-card__tag" data-en="Kids Program" data-ar="برنامج الأطفال">Kids Program</span>
-            </span>
-            <svg class="testi-card__g" viewBox="0 0 24 24" aria-label="Google review"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-          </figcaption>
-        </figure>
-
-        <figure class="testi-card reveal">
-          <span class="testi-card__stars" aria-hidden="true">★★★★★</span>
-          <blockquote class="testi-card__text" data-en="Joined for fitness, left in love with Muay Thai. Clean gym, brand-new gear." data-ar="دخلت للياقة وطلعت عاشق للمواي تاي. المكان نظيف والمعدات جديدة.">Joined for fitness, left in love with Muay Thai. Clean gym, brand-new gear.</blockquote>
-          <figcaption class="testi-card__foot">
-            <span class="testi-card__avatar">Y</span>
-            <span class="testi-card__meta">
-              <b class="testi-card__name" data-en="Yousef M." data-ar="يوسف. م">Yousef M.</b>
-              <span class="testi-card__tag" data-en="Muay Thai" data-ar="مواي تاي">Muay Thai</span>
-            </span>
-            <svg class="testi-card__g" viewBox="0 0 24 24" aria-label="Google review"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-          </figcaption>
-        </figure>
-
-        <figure class="testi-card reveal">
-          <span class="testi-card__stars" aria-hidden="true">★★★★★</span>
-          <blockquote class="testi-card__text" data-en="Serious training and faster results than I expected. Best decision I made this year." data-ar="التدريب جاد والنتائج أسرع من توقعي. أفضل قرار خذيته هالسنة.">Serious training and faster results than I expected. Best decision I made this year.</blockquote>
-          <figcaption class="testi-card__foot">
-            <span class="testi-card__avatar">S</span>
-            <span class="testi-card__meta">
-              <b class="testi-card__name" data-en="Sara K." data-ar="سارة. ك">Sara K.</b>
-              <span class="testi-card__tag" data-en="Kickboxing" data-ar="كيك بوكسينج">Kickboxing</span>
-            </span>
-            <svg class="testi-card__g" viewBox="0 0 24 24" aria-label="Google review"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
-          </figcaption>
-        </figure>
-      </div>
-
-      <div class="testi__cta reveal">
-        <a class="btn btn--ghost" href="https://www.google.com/maps/place/The+Mob+MMA+GYM/@25.473776,51.3893833,17z/data=!3m1!4b1!4m6!3m5!1s0x3e45e3814b642643:0x59ee4d5ef29e9427!8m2!3d25.473776!4d51.3893833!16s%2Fg%2F11trq_2cdt" target="_blank" rel="noopener" data-en="★ Rate us on Google" data-ar="★ قيّمنا على Google">★ Rate us on Google</a>
-      </div>
-    </section>
-
-    <!-- ====== Shop CTA ====== -->
-    <section class="shop-cta section" id="shop">
-      <div class="shop-cta__inner reveal">
-        <img src="images/logo-mark-gold.png" alt="" class="shop-cta__mark" />
-        <span class="section__kicker" data-en="MOB Store" data-ar="متجر النادي">MOB Store</span>
-        <h2 class="shop-cta__title" data-en="Gear Up." data-ar="جهّز عدّتك.">Gear Up.</h2>
-        <p class="shop-cta__sub" data-en="Official MOB apparel, gloves, and equipment." data-ar="ملابس وقفازات ومعدات MOB الرسمية.">Official MOB apparel, gloves, and equipment.</p>
-        <a href="https://themobgym.shop" class="btn btn--gold shop-cta__btn" data-en="Shop Now →" data-ar="← تسوّق الآن">Shop Now →</a>
-      </div>
-    </section>
-
-    <!-- ====== Contact / Booking ====== -->
-    <section class="contact section" id="contact">
-      <img src="images/logo-mark-white.png" alt="" class="contact__watermark">
-      <div class="contact__inner">
-        <span class="section__kicker" data-en="Join Us" data-ar="انضم إلينا">Join Us</span>
-        <h2 class="contact__title reveal" data-en="Ready To Step Inside?" data-ar="جاهز تدخل القفص؟">Ready To Step Inside?</h2>
-        <p class="contact__sub reveal" data-en="Book your free session today. Come see why fighters call this home." data-ar="احجز حصتك المجانية اليوم. تعال وشوف ليش يسمّيها المقاتلون بيتهم.">Book your free session today. Come see why fighters call this home.</p>
-
-        <!-- Location cards — prominent, placed first -->
-        <div class="contact__locations reveal">
-          <a class="loc-card" href="https://www.google.com/maps/place/The+Mob+MMA+GYM/@25.473776,51.3893833,17z/data=!3m1!4b1!4m6!3m5!1s0x3e45e3814b642643:0x59ee4d5ef29e9427!8m2!3d25.473776!4d51.3893833!16s%2Fg%2F11trq_2cdt" target="_blank" rel="noopener">
-            <div class="loc-card__bg"></div>
-            <span class="loc-card__pin">
-              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7m0 9.5A2.5 2.5 0 0 1 9.5 9 2.5 2.5 0 0 1 12 6.5 2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5z"/></svg>
-            </span>
-            <span class="loc-card__label" data-en="Um Salal Branch" data-ar="فرع أم صلال">Um Salal Branch</span>
-            <span class="loc-card__sub" data-en="Umm Salal Ali, Qatar" data-ar="أم صلال علي، قطر">Umm Salal Ali, Qatar</span>
-            <span class="loc-card__cta" data-en="Get Directions →" data-ar="← احصل على الاتجاهات">Get Directions →</span>
-          </a>
-          <a class="loc-card" href="https://www.google.com/maps/search/?api=1&query=25.27364730834961,51.50154495239258" target="_blank" rel="noopener">
-            <div class="loc-card__bg"></div>
-            <span class="loc-card__pin">
-              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7m0 9.5A2.5 2.5 0 0 1 9.5 9 2.5 2.5 0 0 1 12 6.5 2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5z"/></svg>
-            </span>
-            <span class="loc-card__label" data-en="Mirqab Mall Branch" data-ar="فرع مرقاب مول">Mirqab Mall Branch</span>
-            <span class="loc-card__sub" data-en="Mirqab Mall, Doha" data-ar="مرقاب مول، الدوحة">Mirqab Mall, Doha</span>
-            <span class="loc-card__cta" data-en="Get Directions →" data-ar="← احصل على الاتجاهات">Get Directions →</span>
-          </a>
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section__head section__head--split">
+          <div>
+            <span class="kicker" data-en="Inside The Mob" data-ar="داخل النادي">Inside The Mob</span>
+            <h2 class="section__title reveal" data-en="The Facility" data-ar="المرافق">The Facility</h2>
+          </div>
+          <div class="gallery__tabs" role="group" aria-label="Filter by location">
+            <button class="gallery__tab is-active" type="button" data-loc="all" aria-pressed="true" data-en="All Locations" data-ar="كل المواقع">All Locations</button>
+            <button class="gallery__tab" type="button" data-loc="um-salal" aria-pressed="false" data-en="Umm Salal Ali" data-ar="أم صلال علي">Umm Salal Ali</button>
+            <button class="gallery__tab" type="button" data-loc="mirqab" aria-pressed="false" data-en="Mirqab Mall" data-ar="مرقاب مول">Mirqab Mall</button>
+          </div>
         </div>
 
-        <!-- Social contact cards — compact row -->
-        <div class="contact__cards reveal">
-          <a class="contact__card" href="https://wa.me/97451218181" target="_blank" rel="noopener">
-            <span class="contact__card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M.06 24l1.69-6.16a11.87 11.87 0 0 1-1.59-5.95C.16 5.34 5.5 0 12.06 0a11.82 11.82 0 0 1 8.41 3.49 11.82 11.82 0 0 1 3.48 8.42c0 6.55-5.34 11.89-11.9 11.89a11.9 11.9 0 0 1-5.69-1.45L.06 24zm6.6-3.81c1.68 1 3.28 1.6 5.4 1.6 5.45 0 9.89-4.43 9.89-9.88A9.86 9.86 0 0 0 12.06 2 9.88 9.88 0 0 0 2.17 11.9c0 2.22.65 3.88 1.74 5.62l-1 3.66 3.75-.99zm11.39-5.27c-.07-.12-.27-.2-.57-.35-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48a8.94 8.94 0 0 1-1.66-2.06c-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.21-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42z"/></svg>
-            </span>
-            <span class="contact__card-label" data-en="WhatsApp · Um Salal" data-ar="واتساب · أم صلال">WhatsApp · Um Salal</span>
-            <span class="contact__card-value">+974 5121 8181</span>
-          </a>
-          <a class="contact__card" href="https://wa.me/97470509065" target="_blank" rel="noopener">
-            <span class="contact__card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M.06 24l1.69-6.16a11.87 11.87 0 0 1-1.59-5.95C.16 5.34 5.5 0 12.06 0a11.82 11.82 0 0 1 8.41 3.49 11.82 11.82 0 0 1 3.48 8.42c0 6.55-5.34 11.89-11.9 11.89a11.9 11.9 0 0 1-5.69-1.45L.06 24zm6.6-3.81c1.68 1 3.28 1.6 5.4 1.6 5.45 0 9.89-4.43 9.89-9.88A9.86 9.86 0 0 0 12.06 2 9.88 9.88 0 0 0 2.17 11.9c0 2.22.65 3.88 1.74 5.62l-1 3.66 3.75-.99zm11.39-5.27c-.07-.12-.27-.2-.57-.35-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48a8.94 8.94 0 0 1-1.66-2.06c-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.21-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42z"/></svg>
-            </span>
-            <span class="contact__card-label" data-en="WhatsApp · Mirqab" data-ar="واتساب · مرقاب">WhatsApp · Mirqab</span>
-            <span class="contact__card-value">+974 7050 9065</span>
-          </a>
-          <a class="contact__card" href="https://instagram.com/themobgym" target="_blank" rel="noopener">
-            <span class="contact__card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>
-            </span>
-            <span class="contact__card-label" data-en="Instagram" data-ar="إنستغرام">Instagram</span>
-            <span class="contact__card-value">@themobgym</span>
-          </a>
-          <a class="contact__card" href="https://www.tiktok.com/@themobgym" target="_blank" rel="noopener">
-            <span class="contact__card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z"/></svg>
-            </span>
-            <span class="contact__card-label" data-en="TikTok" data-ar="تيك توك">TikTok</span>
-            <span class="contact__card-value">@themobgym</span>
-          </a>
-          <a class="contact__card" href="https://www.snapchat.com/add/themob.gym" target="_blank" rel="noopener">
-            <span class="contact__card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12.206.793c.99 0 4.347.276 5.93 3.821.529 1.193.403 3.219.299 4.847l-.003.06c-.012.18-.022.345-.03.51.075.045.203.09.401.09.3-.016.659-.12 1.033-.301.165-.088.344-.104.464-.104.182 0 .359.029.509.09.45.149.734.479.734.838.015.449-.39.839-1.213 1.168-.089.029-.209.075-.344.119-.45.135-1.139.36-1.333.81-.09.224-.061.524.12.868l.015.015c.06.136 1.526 3.475 4.791 4.014.255.044.435.27.42.509 0 .075-.015.149-.045.225-.24.569-1.273.988-3.146 1.271-.059.091-.12.375-.164.57-.029.179-.074.36-.134.553-.076.271-.27.405-.555.405h-.03c-.135 0-.313-.031-.538-.074-.36-.075-.765-.135-1.273-.135-.3 0-.599.015-.913.074-.6.104-1.123.464-1.723.884-.853.599-1.826 1.288-3.294 1.288-.06 0-.119-.015-.18-.015h-.149c-1.468 0-2.427-.675-3.279-1.288-.599-.42-1.107-.779-1.707-.884-.314-.045-.629-.074-.928-.074-.54 0-.958.089-1.272.149-.211.043-.391.074-.54.074-.374 0-.523-.224-.583-.42-.061-.192-.09-.389-.135-.567-.046-.181-.105-.494-.166-.57-1.918-.222-2.95-.642-3.189-1.226-.031-.063-.052-.15-.055-.225-.015-.243.165-.465.42-.509 3.264-.54 4.73-3.879 4.791-4.02l.016-.029c.18-.345.224-.645.119-.869-.195-.434-.884-.658-1.332-.809-.121-.029-.24-.074-.346-.119-1.107-.435-1.257-.93-1.197-1.273.09-.479.674-.793 1.168-.793.146 0 .27.029.383.074.42.194.789.3 1.104.3.234 0 .384-.06.465-.105l-.046-.569c-.098-1.626-.225-3.651.307-4.837C7.392 1.077 10.739.807 11.727.807l.419-.015h.06z"/></svg>
-            </span>
-            <span class="contact__card-label" data-en="Snapchat" data-ar="سناب شات">Snapchat</span>
-            <span class="contact__card-value">themob.gym</span>
-          </a>
-          <a class="contact__card" href="https://www.facebook.com/themob.sport/reels/" target="_blank" rel="noopener">
-            <span class="contact__card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path fill="currentColor" d="M24 12.07C24 5.41 18.63 0 12 0S0 5.4 0 12.07c0 6.02 4.39 11.01 10.13 11.93v-8.43H7.08v-3.5h3.05V9.41c0-3.02 1.79-4.7 4.53-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.5c-1.5 0-1.96.93-1.96 1.89v2.26h3.32l-.53 3.5h-2.8v8.43C19.61 23.08 24 18.1 24 12.07z"/></svg>
-            </span>
-            <span class="contact__card-label" data-en="Facebook" data-ar="فيسبوك">Facebook</span>
-            <span class="contact__card-value">themob.sport</span>
-          </a>
+        <div class="gallery__grid" id="galleryGrid" data-stagger>
+          <figure class="gallery__item gallery__item--lg reveal" data-loc="um-salal">
+            <picture><source srcset="images/gallery/gear.webp" type="image/webp"><img src="images/gallery/gear.jpg" alt="The MOB Gym competition cage" loading="lazy"></picture>
+            <span class="gallery__label" data-en="The Cage" data-ar="القفص">The Cage</span>
+          </figure>
+          <figure class="gallery__item reveal" data-loc="um-salal">
+            <picture><source srcset="images/gallery/bags.webp" type="image/webp"><img src="images/gallery/bags.jpg" alt="MOB branded heavy bags" loading="lazy"></picture>
+            <span class="gallery__label" data-en="Heavy Bags" data-ar="أكياس الملاكمة">Heavy Bags</span>
+          </figure>
+          <figure class="gallery__item reveal" data-loc="um-salal">
+            <picture><source srcset="images/gallery/mats.webp" type="image/webp"><img src="images/gallery/mats.jpg" alt="Training mats" loading="lazy"></picture>
+            <span class="gallery__label" data-en="The Mats" data-ar="البساط">The Mats</span>
+          </figure>
+          <figure class="gallery__item reveal" data-loc="um-salal">
+            <picture><source srcset="images/gallery/cage.webp" type="image/webp"><img src="images/gallery/cage.jpg" alt="MOB gear rack — headgear, shin guards and gis" loading="lazy"></picture>
+            <span class="gallery__label" data-en="Gear &amp; Apparel" data-ar="المعدات والملابس">Gear &amp; Apparel</span>
+          </figure>
+          <figure class="gallery__item reveal" data-loc="um-salal">
+            <picture><source srcset="images/gallery/inside.webp" type="image/webp"><img src="images/gallery/inside.jpg" alt="Inside The MOB Gym" loading="lazy"></picture>
+            <span class="gallery__label" data-en="Entrance" data-ar="المدخل">Entrance</span>
+          </figure>
+          <figure class="gallery__item gallery__item--wide reveal" data-loc="um-salal">
+            <picture><source srcset="images/gallery/floor.webp" type="image/webp"><img src="images/gallery/floor.jpg" alt="Main training floor" loading="lazy"></picture>
+            <span class="gallery__label" data-en="Gym" data-ar="الصالة">Gym</span>
+          </figure>
+          <figure class="gallery__item gallery__item--lg reveal" data-loc="mirqab">
+            <img src="images/gallery/mirqab-1.jpg" alt="Mirqab Mall entrance corridor" loading="lazy">
+            <span class="gallery__label" data-en="Entrance" data-ar="المدخل">Entrance</span>
+          </figure>
+          <figure class="gallery__item reveal" data-loc="mirqab">
+            <img src="images/gallery/mirqab-2.jpg" alt="MOB gear rack" loading="lazy">
+            <span class="gallery__label" data-en="Mats" data-ar="البساط">Mats</span>
+          </figure>
+          <figure class="gallery__item reveal" data-loc="mirqab">
+            <img src="images/gallery/mirqab-3.jpg" alt="Lounge area" loading="lazy">
+            <span class="gallery__label" data-en="Activity Hall" data-ar="قاعة النشاط">Activity Hall</span>
+          </figure>
+          <figure class="gallery__item reveal" data-loc="mirqab">
+            <img src="images/gallery/mirqab-4.jpg" alt="Relax lounge area" loading="lazy">
+            <span class="gallery__label" data-en="Lounge" data-ar="الاستراحة">Lounge</span>
+          </figure>
+          <figure class="gallery__item reveal" data-loc="mirqab">
+            <img src="images/gallery/mirqab-5.jpg" alt="Mirqab uniforms and gear" loading="lazy">
+            <span class="gallery__label" data-en="Training Floor" data-ar="صالة التدريب">Training Floor</span>
+          </figure>
+          <figure class="gallery__item gallery__item--wide reveal" data-loc="mirqab">
+            <img src="images/gallery/mirqab-6.jpg" alt="Mirqab training corridor" loading="lazy">
+            <span class="gallery__label" data-en="The Mats" data-ar="البساط">The Mats</span>
+          </figure>
         </div>
       </div>
+    </section>
 
-      <!-- Booking form + map -->
-      <div class="booking reveal">
-        <form class="booking__form" id="bookingForm" novalidate>
-          <h3 class="booking__title" data-en="Book a Free Session" data-ar="احجز حصة مجانية">Book a Free Session</h3>
+    <!-- ====== Reviews ====== -->
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <div class="section__head">
+          <span class="kicker" data-en="Reviews" data-ar="آراء الأعضاء">Reviews</span>
+          <h2 class="section__title reveal" data-en="What members say" data-ar="ماذا يقول أعضاؤنا">What members say</h2>
+        </div>
 
+        <div class="reviews__summary reveal">
+          <span class="reviews__score">5.0</span>
+          <span class="reviews__stars" aria-hidden="true">★★★★★</span>
+          <span class="reviews__src" data-en="Member reviews on Google" data-ar="من تقييمات الأعضاء على Google">Member reviews on Google</span>
+        </div>
+
+        <div class="reviews__grid" data-stagger>
+          <figure class="review reveal">
+            <span class="review__stars" aria-hidden="true">★★★★★</span>
+            <blockquote class="review__text" data-en="Best combat gym I've tried in Qatar. Pro coaches and a family vibe from day one." data-ar="أفضل نادي قتالي جرّبته في قطر. المدربين محترفين والأجواء عائلية من أول يوم.">Best combat gym I've tried in Qatar. Pro coaches and a family vibe from day one.</blockquote>
+            <figcaption class="review__foot"><span class="review__avatar">M</span><span><b class="review__name" data-en="Mohammed A." data-ar="محمد. أ">Mohammed A.</b><span class="review__tag" data-en="MMA Member" data-ar="عضو MMA">MMA Member</span></span><svg class="review__g" viewBox="0 0 24 24" aria-label="Google review"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg></figcaption>
+          </figure>
+          <figure class="review reveal">
+            <span class="review__stars" aria-hidden="true">★★★★★</span>
+            <blockquote class="review__text" data-en="My son never misses a class — everyone noticed his progress in two months." data-ar="ولدي ما يرضى يفوّت حصة. تطوره في شهرين كان واضح للكل.">My son never misses a class — everyone noticed his progress in two months.</blockquote>
+            <figcaption class="review__foot"><span class="review__avatar">F</span><span><b class="review__name" data-en="Umm Faisal" data-ar="أم فيصل">Umm Faisal</b><span class="review__tag" data-en="Kids Program" data-ar="برنامج الأطفال">Kids Program</span></span><svg class="review__g" viewBox="0 0 24 24" aria-label="Google review"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg></figcaption>
+          </figure>
+          <figure class="review reveal">
+            <span class="review__stars" aria-hidden="true">★★★★★</span>
+            <blockquote class="review__text" data-en="Joined for fitness, left in love with Muay Thai. Clean gym, brand-new gear." data-ar="دخلت للياقة وطلعت عاشق للمواي تاي. المكان نظيف والمعدات جديدة.">Joined for fitness, left in love with Muay Thai. Clean gym, brand-new gear.</blockquote>
+            <figcaption class="review__foot"><span class="review__avatar">Y</span><span><b class="review__name" data-en="Yousef M." data-ar="يوسف. م">Yousef M.</b><span class="review__tag" data-en="Muay Thai" data-ar="مواي تاي">Muay Thai</span></span><svg class="review__g" viewBox="0 0 24 24" aria-label="Google review"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg></figcaption>
+          </figure>
+          <figure class="review reveal">
+            <span class="review__stars" aria-hidden="true">★★★★★</span>
+            <blockquote class="review__text" data-en="Serious training and faster results than I expected. Best decision I made this year." data-ar="التدريب جاد والنتائج أسرع من توقعي. أفضل قرار خذيته هالسنة.">Serious training and faster results than I expected. Best decision I made this year.</blockquote>
+            <figcaption class="review__foot"><span class="review__avatar">S</span><span><b class="review__name" data-en="Sara K." data-ar="سارة. ك">Sara K.</b><span class="review__tag" data-en="Kickboxing" data-ar="كيك بوكسينج">Kickboxing</span></span><svg class="review__g" viewBox="0 0 24 24" aria-label="Google review"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg></figcaption>
+          </figure>
+        </div>
+
+        <p class="reviews__cta reveal">
+          <a class="btn btn--outline" href="https://www.google.com/maps/place/The+Mob+MMA+GYM/@25.473776,51.3893833,17z/data=!3m1!4b1!4m6!3m5!1s0x3e45e3814b642643:0x59ee4d5ef29e9427!8m2!3d25.473776!4d51.3893833!16s%2Fg%2F11trq_2cdt" target="_blank" rel="noopener"><span data-en="★ Rate us on Google" data-ar="★ قيّمنا على Google">★ Rate us on Google</span></a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ====== Shop band ====== -->
+    <section class="shopband" id="shop">
+      <div class="container shopband__inner">
+        <div class="shopband__text reveal">
+          <span class="kicker kicker--light" data-en="MOB Store" data-ar="متجر النادي">MOB Store</span>
+          <h2 data-en="Gear up." data-ar="جهّز عدّتك.">Gear up.</h2>
+          <p data-en="Official MOB apparel, gloves and equipment — shipped or picked up at the gym." data-ar="ملابس وقفازات ومعدات MOB الرسمية — توصيل أو استلام من النادي.">Official MOB apparel, gloves and equipment — shipped or picked up at the gym.</p>
+          <a href="https://themobgym.shop" class="btn btn--gold"><span data-en="Shop Now" data-ar="تسوّق الآن">Shop Now</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <div class="shopband__media reveal">
+          <picture><source srcset="images/gallery/cage.webp" type="image/webp"><img src="images/gallery/cage.jpg" alt="MOB headgear, shin guards, gloves and gis on the gear rack" loading="lazy"></picture>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Locations ====== -->
+    <section class="section locations" id="locations">
+      <div class="container">
+        <div class="section__head section__head--split">
+          <div>
+            <span class="kicker" data-en="Locations" data-ar="المواقع">Locations</span>
+            <h2 class="section__title reveal" data-en="Two branches in Qatar" data-ar="فرعان في قطر">Two branches in Qatar</h2>
+          </div>
+          <p class="section__lead reveal" data-en="Train at either branch with the same membership. Message the branch closest to you on WhatsApp." data-ar="تدرّب في أي فرع بنفس الاشتراك. راسل أقرب فرع لك على واتساب.">Train at either branch with the same membership. Message the branch closest to you on WhatsApp.</p>
+        </div>
+
+        <div class="loc__grid" data-stagger>
+          <article class="loc reveal">
+            <span class="loc__pin"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7m0 9.5A2.5 2.5 0 0 1 9.5 9 2.5 2.5 0 0 1 12 6.5 2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5z"/></svg></span>
+            <h3 data-en="Umm Salal Ali" data-ar="أم صلال علي">Umm Salal Ali</h3>
+            <p data-en="Umm Salal Ali, Qatar" data-ar="أم صلال علي، قطر">Umm Salal Ali, Qatar</p>
+            <div class="loc__links">
+              <a class="btn btn--sm btn--primary" href="https://www.google.com/maps/place/The+Mob+MMA+GYM/@25.473776,51.3893833,17z/data=!3m1!4b1!4m6!3m5!1s0x3e45e3814b642643:0x59ee4d5ef29e9427!8m2!3d25.473776!4d51.3893833!16s%2Fg%2F11trq_2cdt" target="_blank" rel="noopener"><span data-en="Get directions" data-ar="الاتجاهات">Get directions</span></a>
+              <a class="btn btn--sm btn--outline" href="https://wa.me/97451218181" target="_blank" rel="noopener"><span>+974 5121 8181</span></a>
+            </div>
+          </article>
+          <article class="loc reveal">
+            <span class="loc__pin"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7m0 9.5A2.5 2.5 0 0 1 9.5 9 2.5 2.5 0 0 1 12 6.5 2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5z"/></svg></span>
+            <h3 data-en="Mirqab Mall" data-ar="مرقاب مول">Mirqab Mall</h3>
+            <p data-en="Mirqab Mall, Doha" data-ar="مرقاب مول، الدوحة">Mirqab Mall, Doha</p>
+            <div class="loc__links">
+              <a class="btn btn--sm btn--primary" href="https://www.google.com/maps/search/?api=1&query=25.27364730834961,51.50154495239258" target="_blank" rel="noopener"><span data-en="Get directions" data-ar="الاتجاهات">Get directions</span></a>
+              <a class="btn btn--sm btn--outline" href="https://wa.me/97470509065" target="_blank" rel="noopener"><span>+974 7050 9065</span></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="socials reveal">
+          <a class="social" href="https://instagram.com/themobgym" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg><span>@themobgym</span></a>
+          <a class="social" href="https://www.tiktok.com/@themobgym" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z"/></svg><span>@themobgym</span></a>
+          <a class="social" href="https://www.snapchat.com/add/themob.gym" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12.206.793c.99 0 4.347.276 5.93 3.821.529 1.193.403 3.219.299 4.847l-.003.06c-.012.18-.022.345-.03.51.075.045.203.09.401.09.3-.016.659-.12 1.033-.301.165-.088.344-.104.464-.104.182 0 .359.029.509.09.45.149.734.479.734.838.015.449-.39.839-1.213 1.168-.089.029-.209.075-.344.119-.45.135-1.139.36-1.333.81-.09.224-.061.524.12.868l.015.015c.06.136 1.526 3.475 4.791 4.014.255.044.435.27.42.509 0 .075-.015.149-.045.225-.24.569-1.273.988-3.146 1.271-.059.091-.12.375-.164.57-.029.179-.074.36-.134.553-.076.271-.27.405-.555.405h-.03c-.135 0-.313-.031-.538-.074-.36-.075-.765-.135-1.273-.135-.3 0-.599.015-.913.074-.6.104-1.123.464-1.723.884-.853.599-1.826 1.288-3.294 1.288-.06 0-.119-.015-.18-.015h-.149c-1.468 0-2.427-.675-3.279-1.288-.599-.42-1.107-.779-1.707-.884-.314-.045-.629-.074-.928-.074-.54 0-.958.089-1.272.149-.211.043-.391.074-.54.074-.374 0-.523-.224-.583-.42-.061-.192-.09-.389-.135-.567-.046-.181-.105-.494-.166-.57-1.918-.222-2.95-.642-3.189-1.226-.031-.063-.052-.15-.055-.225-.015-.243.165-.465.42-.509 3.264-.54 4.73-3.879 4.791-4.02l.016-.029c.18-.345.224-.645.119-.869-.195-.434-.884-.658-1.332-.809-.121-.029-.24-.074-.346-.119-1.107-.435-1.257-.93-1.197-1.273.09-.479.674-.793 1.168-.793.146 0 .27.029.383.074.42.194.789.3 1.104.3.234 0 .384-.06.465-.105l-.046-.569c-.098-1.626-.225-3.651.307-4.837C7.392 1.077 10.739.807 11.727.807l.419-.015h.06z"/></svg><span>themob.gym</span></a>
+          <a class="social" href="https://www.facebook.com/themob.sport/reels/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M24 12.07C24 5.41 18.63 0 12 0S0 5.4 0 12.07c0 6.02 4.39 11.01 10.13 11.93v-8.43H7.08v-3.5h3.05V9.41c0-3.02 1.79-4.7 4.53-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.5c-1.5 0-1.96.93-1.96 1.89v2.26h3.32l-.53 3.5h-2.8v8.43C19.61 23.08 24 18.1 24 12.07z"/></svg><span>themob.sport</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Final CTA + Booking ====== -->
+    <section class="section cta" id="contact">
+      <div class="container cta__inner">
+        <div class="cta__text reveal">
+          <span class="kicker kicker--light" data-en="Join Us" data-ar="انضم إلينا">Join Us</span>
+          <h2 data-en="Ready to step inside?" data-ar="جاهز تدخل القفص؟">Ready to step inside?</h2>
+          <p data-en="Your first session is free. Tell us who you are and what you want to train — we'll reply on WhatsApp." data-ar="حصتك الأولى مجانية. قل لنا من أنت وماذا تريد أن تتدرّب — ونرد عليك على واتساب.">Your first session is free. Tell us who you are and what you want to train — we'll reply on WhatsApp.</p>
+          <ul class="cta__contacts">
+            <li><a href="https://wa.me/97451218181" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.1 14.9l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 0 1 12 4zm-2.5 4c-.2 0-.5.1-.7.4c-.3.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.9 4.5 4c.6.2 1.1.4 1.5.5c.6.2 1.2.2 1.6.1c.5-.1 1.5-.6 1.7-1.2c.2-.6.2-1.1.1-1.2c-.1-.1-.3-.2-.6-.3l-1.5-.7c-.2-.1-.4-.1-.5.1l-.6.8c-.1.2-.3.2-.5.1c-.6-.2-1.4-.5-2.2-1.3c-.6-.5-1-1.2-1.2-1.4c-.1-.2 0-.3.1-.4l.4-.5c.1-.1.1-.3.2-.4c.1-.2 0-.3 0-.5l-.6-1.5c-.2-.4-.4-.4-.6-.4z"/></svg><span data-en="WhatsApp · Umm Salal Ali · +974 5121 8181" data-ar="واتساب · أم صلال علي · 8181 5121 974+">WhatsApp · Umm Salal Ali · +974 5121 8181</span></a></li>
+            <li><a href="https://wa.me/97470509065" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.1 14.9l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 0 1 12 4zm-2.5 4c-.2 0-.5.1-.7.4c-.3.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.9 4.5 4c.6.2 1.1.4 1.5.5c.6.2 1.2.2 1.6.1c.5-.1 1.5-.6 1.7-1.2c.2-.6.2-1.1.1-1.2c-.1-.1-.3-.2-.6-.3l-1.5-.7c-.2-.1-.4-.1-.5.1l-.6.8c-.1.2-.3.2-.5.1c-.6-.2-1.4-.5-2.2-1.3c-.6-.5-1-1.2-1.2-1.4c-.1-.2 0-.3.1-.4l.4-.5c.1-.1.1-.3.2-.4c.1-.2 0-.3 0-.5l-.6-1.5c-.2-.4-.4-.4-.6-.4z"/></svg><span data-en="WhatsApp · Mirqab Mall · +974 7050 9065" data-ar="واتساب · مرقاب مول · 9065 7050 974+">WhatsApp · Mirqab Mall · +974 7050 9065</span></a></li>
+            <li><a href="tel:+97451218181"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M6.62 10.79a15.5 15.5 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24a11.4 11.4 0 0 0 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1a11.4 11.4 0 0 0 .57 3.57a1 1 0 0 1-.24 1.02l-2.2 2.2z"/></svg><span data-en="Call +974 5121 8181" data-ar="اتصال 8181 5121 974+">Call +974 5121 8181</span></a></li>
+          </ul>
+        </div>
+
+        <form class="form reveal" id="bookingForm" novalidate>
+          <h3 data-en="Book a free session" data-ar="احجز حصة مجانية">Book a free session</h3>
           <label class="field">
             <span data-en="Full name" data-ar="الاسم الكامل">Full name</span>
-            <input type="text" name="name" required data-ph-en="Your name" data-ph-ar="اسمك" placeholder="Your name">
+            <input type="text" name="name" required autocomplete="name" data-ph-en="Your name" data-ph-ar="اسمك" placeholder="Your name">
           </label>
-
           <label class="field">
             <span data-en="Phone" data-ar="رقم الجوال">Phone</span>
-            <input type="tel" name="phone" required data-ph-en="+974 ..." data-ph-ar="+974 ..." placeholder="+974 ...">
+            <input type="tel" name="phone" required autocomplete="tel" inputmode="tel" data-ph-en="+974 ..." data-ph-ar="+974 ..." placeholder="+974 ...">
           </label>
-
           <label class="field">
             <span data-en="Sport" data-ar="الرياضة">Sport</span>
             <select name="sport">
-              <option data-en="Jiu-Jitsu" data-ar="جيوجيتسو">Jiu-Jitsu</option>
+              <option data-en="Boxing" data-ar="ملاكمة">Boxing</option>
               <option data-en="Muay Thai" data-ar="مواي تاي">Muay Thai</option>
               <option data-en="Kickboxing" data-ar="كيك بوكسينج">Kickboxing</option>
-              <option data-en="Boxing" data-ar="ملاكمة">Boxing</option>
+              <option data-en="Brazilian Jiu-Jitsu" data-ar="جيوجيتسو">Brazilian Jiu-Jitsu</option>
               <option data-en="Taekwondo" data-ar="تايكواندو">Taekwondo</option>
+              <option data-en="Karate" data-ar="كاراتيه">Karate</option>
               <option data-en="Gymnastics" data-ar="جمباز">Gymnastics</option>
               <option data-en="Fitness" data-ar="لياقة">Fitness</option>
               <option data-en="Dance / Zumba" data-ar="رقص / زومبا">Dance / Zumba</option>
             </select>
           </label>
-
           <label class="field">
             <span data-en="Message (optional)" data-ar="ملاحظات (اختياري)">Message (optional)</span>
             <textarea name="message" rows="3" data-ph-en="Anything we should know?" data-ph-ar="أي شيء تود إخبارنا به؟" placeholder="Anything we should know?"></textarea>
           </label>
-
-          <button type="submit" class="btn btn--gold booking__submit" data-en="Send via WhatsApp" data-ar="أرسل عبر واتساب">Send via WhatsApp</button>
+          <button type="submit" class="btn btn--gold btn--lg"><span data-en="Send via WhatsApp" data-ar="أرسل عبر واتساب">Send via WhatsApp</span></button>
+          <p class="form__note" data-en="Opens WhatsApp with your details pre-filled — no account needed." data-ar="يفتح واتساب برسالة جاهزة ببياناتك — بدون تسجيل.">Opens WhatsApp with your details pre-filled — no account needed.</p>
         </form>
-
       </div>
     </section>
   </main>
+
+  <!-- ====== Footer ====== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="images/logo-mark-gold.png" alt="" width="40" height="40">
+        <strong>THE MOB GYM</strong>
+        <p data-en="Combat sports academy · Umm Salal Ali &amp; Mirqab Mall, Qatar" data-ar="أكاديمية رياضات قتالية · أم صلال علي ومرقاب مول، قطر">Combat sports academy · Umm Salal Ali &amp; Mirqab Mall, Qatar</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="#programs" data-en="Programs" data-ar="البرامج">Programs</a>
+        <a href="#coaches" data-en="Coaches" data-ar="المدربون">Coaches</a>
+        <a href="#schedule" data-en="Schedule" data-ar="الجدول">Schedule</a>
+        <a href="#pricing" data-en="Membership" data-ar="الأسعار">Membership</a>
+        <a href="#gallery" data-en="Gallery" data-ar="المعرض">Gallery</a>
+        <a href="https://themobgym.shop" data-en="Shop" data-ar="المتجر">Shop</a>
+        <a href="#locations" data-en="Locations" data-ar="المواقع">Locations</a>
+        <a href="#contact" data-en="Book a Trial" data-ar="احجز حصة">Book a Trial</a>
+      </nav>
+      <div class="footer__social" aria-label="Social media">
+        <a href="https://instagram.com/themobgym" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg></a>
+        <a href="https://www.tiktok.com/@themobgym" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z"/></svg></a>
+        <a href="https://www.snapchat.com/add/themob.gym" target="_blank" rel="noopener" aria-label="Snapchat"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.206.793c.99 0 4.347.276 5.93 3.821.529 1.193.403 3.219.299 4.847l-.003.06c-.012.18-.022.345-.03.51.075.045.203.09.401.09.3-.016.659-.12 1.033-.301.165-.088.344-.104.464-.104.182 0 .359.029.509.09.45.149.734.479.734.838.015.449-.39.839-1.213 1.168-.089.029-.209.075-.344.119-.45.135-1.139.36-1.333.81-.09.224-.061.524.12.868l.015.015c.06.136 1.526 3.475 4.791 4.014.255.044.435.27.42.509 0 .075-.015.149-.045.225-.24.569-1.273.988-3.146 1.271-.059.091-.12.375-.164.57-.029.179-.074.36-.134.553-.076.271-.27.405-.555.405h-.03c-.135 0-.313-.031-.538-.074-.36-.075-.765-.135-1.273-.135-.3 0-.599.015-.913.074-.6.104-1.123.464-1.723.884-.853.599-1.826 1.288-3.294 1.288-.06 0-.119-.015-.18-.015h-.149c-1.468 0-2.427-.675-3.279-1.288-.599-.42-1.107-.779-1.707-.884-.314-.045-.629-.074-.928-.074-.54 0-.958.089-1.272.149-.211.043-.391.074-.54.074-.374 0-.523-.224-.583-.42-.061-.192-.09-.389-.135-.567-.046-.181-.105-.494-.166-.57-1.918-.222-2.95-.642-3.189-1.226-.031-.063-.052-.15-.055-.225-.015-.243.165-.465.42-.509 3.264-.54 4.73-3.879 4.791-4.02l.016-.029c.18-.345.224-.645.119-.869-.195-.434-.884-.658-1.332-.809-.121-.029-.24-.074-.346-.119-1.107-.435-1.257-.93-1.197-1.273.09-.479.674-.793 1.168-.793.146 0 .27.029.383.074.42.194.789.3 1.104.3.234 0 .384-.06.465-.105l-.046-.569c-.098-1.626-.225-3.651.307-4.837C7.392 1.077 10.739.807 11.727.807l.419-.015h.06z"/></svg></a>
+        <a href="https://www.facebook.com/themob.sport/reels/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M24 12.07C24 5.41 18.63 0 12 0S0 5.4 0 12.07c0 6.02 4.39 11.01 10.13 11.93v-8.43H7.08v-3.5h3.05V9.41c0-3.02 1.79-4.7 4.53-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.5c-1.5 0-1.96.93-1.96 1.89v2.26h3.32l-.53 3.5h-2.8v8.43C19.61 23.08 24 18.1 24 12.07z"/></svg></a>
+      </div>
+      <p class="footer__copy" data-en="© 2022–2026 THE MOB GYM. All rights reserved." data-ar="© 2022–2026 ذا موب جيم. جميع الحقوق محفوظة.">© 2022–2026 THE MOB GYM. All rights reserved.</p>
+    </div>
+  </footer>
 
   <!-- ====== Floating WhatsApp (desktop) ====== -->
   <a href="https://wa.me/97451218181" target="_blank" rel="noopener" class="wa-float" aria-label="Chat on WhatsApp">
@@ -643,7 +728,7 @@
   <!-- ====== Toast ====== -->
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <!-- ====== Mobile sticky action bar (mobile-only, designed for thumb reach) ====== -->
+  <!-- ====== Mobile sticky action bar ====== -->
   <nav class="mobile-bar" aria-label="Quick actions">
     <a href="tel:+97451218181" class="mobile-bar__btn">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.62 10.79a15.5 15.5 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24a11.4 11.4 0 0 0 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1a11.4 11.4 0 0 0 .57 3.57a1 1 0 0 1-.24 1.02l-2.2 2.2z"/></svg>
@@ -655,236 +740,31 @@
     </a>
     <a href="#contact" class="mobile-bar__btn mobile-bar__btn--cta">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19 3h-1V1h-2v2H8V1H6v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm0 16H5V9h14v10zM5 7V5h14v2H5z"/></svg>
-      <span data-en="Book" data-ar="احجز">Book</span>
+      <span data-en="Free Trial" data-ar="حصة مجانية">Free Trial</span>
     </a>
   </nav>
 
-  <!-- ====== Footer ====== -->
-  <footer class="footer">
-    <div class="footer__inner">
-      <div class="footer__brand">
-        <img src="images/logo-mark-gold.png" alt="" class="footer__mark">
-        <span>THE MOB GYM</span>
-      </div>
-      <div class="footer__socials" aria-label="Social media">
-        <a href="https://instagram.com/themobgym" target="_blank" rel="noopener" aria-label="Instagram">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>
-        </a>
-        <a href="https://www.tiktok.com/@themobgym" target="_blank" rel="noopener" aria-label="TikTok">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z"/></svg>
-        </a>
-        <a href="https://www.snapchat.com/add/themob.gym" target="_blank" rel="noopener" aria-label="Snapchat">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.206.793c.99 0 4.347.276 5.93 3.821.529 1.193.403 3.219.299 4.847l-.003.06c-.012.18-.022.345-.03.51.075.045.203.09.401.09.3-.016.659-.12 1.033-.301.165-.088.344-.104.464-.104.182 0 .359.029.509.09.45.149.734.479.734.838.015.449-.39.839-1.213 1.168-.089.029-.209.075-.344.119-.45.135-1.139.36-1.333.81-.09.224-.061.524.12.868l.015.015c.06.136 1.526 3.475 4.791 4.014.255.044.435.27.42.509 0 .075-.015.149-.045.225-.24.569-1.273.988-3.146 1.271-.059.091-.12.375-.164.57-.029.179-.074.36-.134.553-.076.271-.27.405-.555.405h-.03c-.135 0-.313-.031-.538-.074-.36-.075-.765-.135-1.273-.135-.3 0-.599.015-.913.074-.6.104-1.123.464-1.723.884-.853.599-1.826 1.288-3.294 1.288-.06 0-.119-.015-.18-.015h-.149c-1.468 0-2.427-.675-3.279-1.288-.599-.42-1.107-.779-1.707-.884-.314-.045-.629-.074-.928-.074-.54 0-.958.089-1.272.149-.211.043-.391.074-.54.074-.374 0-.523-.224-.583-.42-.061-.192-.09-.389-.135-.567-.046-.181-.105-.494-.166-.57-1.918-.222-2.95-.642-3.189-1.226-.031-.063-.052-.15-.055-.225-.015-.243.165-.465.42-.509 3.264-.54 4.73-3.879 4.791-4.02l.016-.029c.18-.345.224-.645.119-.869-.195-.434-.884-.658-1.332-.809-.121-.029-.24-.074-.346-.119-1.107-.435-1.257-.93-1.197-1.273.09-.479.674-.793 1.168-.793.146 0 .27.029.383.074.42.194.789.3 1.104.3.234 0 .384-.06.465-.105l-.046-.569c-.098-1.626-.225-3.651.307-4.837C7.392 1.077 10.739.807 11.727.807l.419-.015h.06z"/></svg>
-        </a>
-        <a href="https://www.facebook.com/themob.sport/reels/" target="_blank" rel="noopener" aria-label="Facebook">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M24 12.07C24 5.41 18.63 0 12 0S0 5.4 0 12.07c0 6.02 4.39 11.01 10.13 11.93v-8.43H7.08v-3.5h3.05V9.41c0-3.02 1.79-4.7 4.53-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.5c-1.5 0-1.96.93-1.96 1.89v2.26h3.32l-.53 3.5h-2.8v8.43C19.61 23.08 24 18.1 24 12.07z"/></svg>
-        </a>
-      </div>
-      <p class="footer__tag" data-en="© 2022–2026 THE MOB GYM." data-ar="© 2022–2026 ذا موب جيم.">© 2022–2026 THE MOB GYM.</p>
-    </div>
-  </footer>
-
-  <!-- Lightbox -->
+  <!-- ====== Lightbox ====== -->
   <div class="lb-overlay" id="lbOverlay" role="dialog" aria-modal="true" aria-label="Gallery lightbox" hidden>
-    <button class="lb-close" id="lbClose" aria-label="Close">
-      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-    </button>
-    <button class="lb-arrow lb-arrow--prev" id="lbPrev" aria-label="Previous">
-      <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="15 18 9 12 15 6"/></svg>
-    </button>
-    <div class="lb-img-wrap">
-      <img class="lb-img" id="lbImg" src="" alt="" />
-    </div>
-    <button class="lb-arrow lb-arrow--next" id="lbNext" aria-label="Next">
-      <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="9 18 15 12 9 6"/></svg>
-    </button>
+    <button class="lb-close" id="lbClose" type="button" aria-label="Close"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <button class="lb-arrow lb-arrow--prev" id="lbPrev" type="button" aria-label="Previous"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="15 18 9 12 15 6"/></svg></button>
+    <div class="lb-img-wrap"><img class="lb-img" id="lbImg" src="" alt="" /></div>
+    <button class="lb-arrow lb-arrow--next" id="lbNext" type="button" aria-label="Next"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="9 18 15 12 9 6"/></svg></button>
     <div class="lb-caption" id="lbCaption"></div>
     <div class="lb-counter" id="lbCounter"></div>
   </div>
 
-  <!-- Free session nudge toast -->
+  <!-- ====== Free session nudge ====== -->
   <div class="session-toast" id="sessionToast" role="dialog" aria-label="Free session offer" hidden>
-    <button class="session-toast__close" id="sessionToastClose" aria-label="Close">
-      <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-    </button>
-    <div class="session-toast__icon">
-      <img src="images/logo-mark-gold.png" alt="" width="36" height="36" onerror="this.style.display='none'">
-    </div>
+    <button class="session-toast__close" id="sessionToastClose" type="button" aria-label="Close"><svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></button>
+    <div class="session-toast__icon"><img src="images/logo-mark-gold.png" alt="" width="36" height="36"></div>
     <div class="session-toast__body">
       <p class="session-toast__title" data-en="First session is on us 🥊" data-ar="الحصة الأولى علينا 🥊">First session is on us 🥊</p>
-      <p class="session-toast__sub" data-en="Train free — what have you got to lose?" data-ar="تدرّب مجاناً.. خسران شي؟">تدرّب مجاناً.. خسران شي؟</p>
+      <p class="session-toast__sub" data-en="Train free — what have you got to lose?" data-ar="تدرّب مجاناً.. خسران شي؟">Train free — what have you got to lose?</p>
     </div>
     <a class="session-toast__btn" href="#contact" data-en="Book Now" data-ar="احجز الحين">Book Now</a>
   </div>
 
   <script src="js/main.js"></script>
-  <script>
-    /* Free session toast */
-    (function () {
-      var toast = document.getElementById('sessionToast');
-      var closeBtn = document.getElementById('sessionToastClose');
-      var bookBtn = toast ? toast.querySelector('.session-toast__btn') : null;
-      if (!toast) return;
-      if (sessionStorage.getItem('toastDismissed')) return;
-
-      function dismiss() {
-        toast.classList.remove('is-visible');
-        sessionStorage.setItem('toastDismissed', '1');
-      }
-
-      function syncLang() {
-        var lang = document.documentElement.lang || 'en';
-        toast.querySelectorAll('[data-en]').forEach(function (el) {
-          el.textContent = lang === 'ar' ? el.dataset.ar : el.dataset.en;
-        });
-      }
-
-      toast.removeAttribute('hidden');
-      setTimeout(function () {
-        syncLang();
-        toast.classList.add('is-visible');
-      }, 7000);
-
-      closeBtn.addEventListener('click', dismiss);
-      if (bookBtn) bookBtn.addEventListener('click', dismiss);
-
-      var langBtn = document.getElementById('langToggle');
-      if (langBtn) langBtn.addEventListener('click', function () {
-        setTimeout(syncLang, 50);
-      });
-    })();
-
-    /* Gallery location tabs */
-    (function () {
-      const tabs = document.querySelectorAll('.gallery__tab');
-      const grid = document.getElementById('galleryGrid');
-      if (!tabs.length || !grid) return;
-
-      function filterGallery(loc) {
-        grid.querySelectorAll('.gallery__item').forEach(function (item) {
-          const itemLoc = item.dataset.loc;
-          const show = loc === 'all' || itemLoc === loc;
-          item.style.display = show ? '' : 'none';
-        });
-      }
-
-      tabs.forEach(function (tab) {
-        tab.addEventListener('click', function () {
-          tabs.forEach(function (t) { t.classList.remove('is-active'); });
-          tab.classList.add('is-active');
-          filterGallery(tab.dataset.loc);
-          /* sync text for lang */
-          const lang = document.documentElement.lang || 'en';
-          tabs.forEach(function (t) {
-            t.textContent = lang === 'ar' ? t.dataset.ar : t.dataset.en;
-          });
-        });
-      });
-
-      /* keep tab labels in sync with lang toggle */
-      const langBtn = document.getElementById('langToggle');
-      if (langBtn) {
-        langBtn.addEventListener('click', function () {
-          setTimeout(function () {
-            const lang = document.documentElement.lang || 'en';
-            tabs.forEach(function (t) {
-              t.textContent = lang === 'ar' ? t.dataset.ar : t.dataset.en;
-            });
-          }, 50);
-        });
-      }
-    })();
-
-    /* Gallery Lightbox */
-    (function () {
-      var overlay = document.getElementById('lbOverlay');
-      var img     = document.getElementById('lbImg');
-      var caption = document.getElementById('lbCaption');
-      var counter = document.getElementById('lbCounter');
-      var prevBtn = document.getElementById('lbPrev');
-      var nextBtn = document.getElementById('lbNext');
-      var closeBtn= document.getElementById('lbClose');
-      if (!overlay) return;
-
-      var items = [];   /* visible gallery items */
-      var current = 0;
-
-      function buildItems() {
-        items = Array.from(document.querySelectorAll('#galleryGrid .gallery__item'))
-          .filter(function (f) { return f.style.display !== 'none'; });
-      }
-
-      function open(index) {
-        buildItems();
-        current = index;
-        show();
-        overlay.removeAttribute('hidden');
-        requestAnimationFrame(function () { overlay.classList.add('is-open'); });
-        document.body.style.overflow = 'hidden';
-      }
-
-      function show() {
-        var fig = items[current];
-        if (!fig) return;
-        var imgEl = fig.querySelector('img');
-        var src = imgEl ? (imgEl.currentSrc || imgEl.src) : '';
-        img.src = src;
-        img.alt = imgEl ? imgEl.alt : '';
-        var lang = document.documentElement.lang || 'en';
-        caption.textContent = lang === 'ar' ? (fig.dataset.labelAr || '') : (fig.dataset.labelEn || '');
-        counter.textContent = (current + 1) + ' / ' + items.length;
-        /* reset scale anim */
-        img.style.transition = 'none';
-        img.style.transform = 'scale(.94)';
-        requestAnimationFrame(function () {
-          img.style.transition = '';
-          img.style.transform = 'scale(1)';
-        });
-      }
-
-      function close() {
-        overlay.classList.remove('is-open');
-        setTimeout(function () {
-          overlay.setAttribute('hidden', '');
-          img.src = '';
-        }, 300);
-        document.body.style.overflow = '';
-      }
-
-      function prev() { current = (current - 1 + items.length) % items.length; show(); }
-      function next() { current = (current + 1) % items.length; show(); }
-
-      /* click on gallery items */
-      document.getElementById('galleryGrid').addEventListener('click', function (e) {
-        var fig = e.target.closest('.gallery__item');
-        if (!fig) return;
-        buildItems();
-        var idx = items.indexOf(fig);
-        if (idx !== -1) open(idx);
-      });
-
-      closeBtn.addEventListener('click', close);
-      prevBtn.addEventListener('click', prev);
-      nextBtn.addEventListener('click', next);
-      overlay.addEventListener('click', function (e) { if (e.target === overlay) close(); });
-
-      /* keyboard */
-      document.addEventListener('keydown', function (e) {
-        if (overlay.hasAttribute('hidden')) return;
-        if (e.key === 'Escape')      close();
-        if (e.key === 'ArrowLeft')   prev();
-        if (e.key === 'ArrowRight')  next();
-      });
-
-      /* update caption lang when language toggled */
-      var langBtn = document.getElementById('langToggle');
-      if (langBtn) langBtn.addEventListener('click', function () {
-        if (!overlay.hasAttribute('hidden')) setTimeout(show, 50);
-      });
-
-      /* cursor hint */
-      document.getElementById('galleryGrid').style.cursor = 'zoom-in';
-    })();
-  </script>
 </body>
 </html>

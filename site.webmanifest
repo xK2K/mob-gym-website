@@ -4,7 +4,7 @@
   "description": "MMA & Combat Sports — Umm Salal Ali & Mirqab Mall, Qatar",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0a0a0f",
+  "background_color": "#f5f3ee",
   "theme_color": "#552583",
   "icons": [
     { "src": "images/favicon-180.png", "sizes": "180x180", "type": "image/png" },

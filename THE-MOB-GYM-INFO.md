@@ -26,13 +26,16 @@
 
 ---
 
-## 🥋 الرياضات / Sports (6)
-1. **Brazilian Jiu-Jitsu — الجيوجيتسو** — مصارعة أرضية، سيطرة وإخضاع.
+## 🥋 الرياضات / Sports (9)
+1. **Boxing — الملاكمة** — ضرب باليدين، حركة قدمين وتوقيت.
 2. **Muay Thai — المواي تاي** — فن الأطراف الثمانية (قبضات · أكواع · ركب · سيقان).
-3. **Kickboxing — الكيك بوكسينغ** — لكمات وركلات، سريعة ومتفجرة.
-4. **Boxing — الملاكمة** — ضرب باليدين، حركة قدمين وتوقيت.
-5. **Fitness — اللياقة** — قوة ولياقة وتحمّل.
-6. **Oriental Dance & Zumba — الرقص الشرقي والزومبا** — كارديو وإيقاع.
+3. **Kickboxing — الكيك بوكسينج** — لكمات وركلات، سريعة ومتفجرة.
+4. **Brazilian Jiu-Jitsu — الجيوجيتسو** — مصارعة أرضية، سيطرة وإخضاع.
+5. **Taekwondo — التايكواندو** — ركلات عالية سريعة وانضباط.
+6. **Karate — الكاراتيه** — ضربات دقيقة وانضباط وتركيز.
+7. **Fitness — اللياقة** — قوة ولياقة وتحمّل.
+8. **Gymnastics — الجمباز** — قوة ومرونة وتحكم بالجسم.
+9. **Oriental Dance & Zumba — الرقص الشرقي والزومبا** — كارديو وإيقاع.
 
 ---
 
@@ -84,7 +87,17 @@
 ## 👥 المدربون / Coaches
 كل رياضة يقودها مقاتلون ذوو خبرة ومدربون معتمدون.
 Every discipline is led by experienced fighters and certified instructors.
-> ⏳ بانتظار: صور المدربين + الأسماء + النبذة التعريفية (bio).
+
+| الصورة / Photo | الاسم / Name | الرياضة / Sport |
+|---|---|---|
+| `images/coaches/coach-1.jpg` | كوتش معاذ — Coach Muath | Taekwondo |
+| `images/coaches/coach-2.jpg` | كوتش عبد الرؤوف — Coach Abdul Raouf | Kickboxing |
+| `images/coaches/coach-3.jpg` | كوتش ناصر — Coach Nasser | Kickboxing |
+| `images/coaches/coach-4.jpg` | كوتش بلال — Coach Bilal | Brazilian Jiu-Jitsu |
+| `images/coaches/coach-5.jpg` | كوتش محمد شعبان — Coach Mohammed Shaaban | Karate |
+
+> ⏳ بانتظار: النبذة التعريفية (bio) لكل مدرب.
+> ℹ️ ملاحظة على الصور: `images/gallery/gear.jpg` = صورة القفص، و`images/gallery/cage.jpg` = رف المعدات (الأسماء معكوسة).
 
 ---
 
